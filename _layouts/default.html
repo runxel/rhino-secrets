@@ -16,7 +16,11 @@
 
 		<main class="page-content" aria-label="Content">
 			<div class="wrapper">
-				{{ content }}
+				<!-- instead of {{ content }} -->
+				<!-- we use a liquid tag -->
+				<!-- so we can enjoy js-free anchors in jekyll -->
+				<!-- https://github.com/allejo/jekyll-anchor-headings -->
+				{% include anchor_headings.html html=content beforeHeading=true %}
 			</div>
 		</main>
 
