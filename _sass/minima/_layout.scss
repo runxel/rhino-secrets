@@ -142,6 +142,7 @@
   color: $grey-color;
   @extend %clearfix;
   margin: auto; /*changed*/
+  text-align: center;
 /*  margin-left: -$spacing-unit / 2;*/
 }
 
