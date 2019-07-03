@@ -149,6 +149,7 @@
   width:         calc(100% - (#{$spacing-unit} / 2));
   margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
+  margin: auto; /*changed*/
 }
 
 .footer-col-1,
