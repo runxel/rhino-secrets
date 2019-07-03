@@ -140,8 +140,9 @@
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
   color: $grey-color;
-  margin-left: -$spacing-unit / 2;
   @extend %clearfix;
+  margin: auto; /*changed*/
+/*  margin-left: -$spacing-unit / 2;*/
 }
 
 .footer-col {
@@ -149,7 +150,6 @@
   width:         calc(100% - (#{$spacing-unit} / 2));
   margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
-  margin: auto; /*changed*/
 }
 
 .footer-col-1,
