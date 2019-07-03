@@ -29,6 +29,7 @@ _Join
 Take advantage of the possibility to assign a display mode to an object via `_SetObjectDisplayMode`.
 ![set object display mode](/img/set_obj_display_mode.pg "Artic Viewport with transparent paraboloid")
 
+<hr>
 
 ## Grasshopper
 ### What does the red wire do?
@@ -36,4 +37,5 @@ You probably already asked yourself what the red wire does in Grasshopper when y
 The answer: it names e.g. relays!  
 _(Note: at least for me the behaviour is bugged and you need to do this twice, bevor the name gets auto propagated.)_  
 ![red wiring](/img/red-wiring_1.png)
+
 ![red wiring](/img/red-wiring_2.png)
