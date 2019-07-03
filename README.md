@@ -17,15 +17,6 @@ Ever wondered what the specials chars in commands meant? Or are you always forge
 | `~` | Suppresses command options for clutter free command feedback. |
 | `;` | Comment. (used in macros) |
 
-### Rebuild your edges
-If you use the `RebuildEdges` command it will restore the original trimmed or non-trimmed edges of a surface. This will vastly reduce the amount of newly added control points of most surfaces that are extruded from- or matched to the surface with rebuilt edges.  
-You can usethis macro with polysurfaces:
-```
-! _Explode
-_RebuildEdges _Enter
-_Join
-```
-
 ### Different looking
 Take advantage of the possibility to assign a display mode to an object via `_SetObjectDisplayMode`.  
 ![set object display mode](/img/set_obj_display_mode.png "Artic Viewport with transparent paraboloid")
@@ -72,9 +63,18 @@ Give `_SolidPtOn` a try.
 ... with `_MoveUVN`. Works beatifully with `_SelU` and `_SelV`.
 
 ### Surfaces want to be one
-`_MergeSrf` command to join surfaces together without making a polysurface (makes a new single surface, even if surfaces are not co-planar).
+`_MergeSrf` command to join surfaces together without making a polysurface (makes a new single surface, even if surfaces are not co-planar).  
 
 `_MergeAllFaces` command to turn _coplanar polysurface faces_ into one face.
+
+### Rebuild your edges
+If you use the `RebuildEdges` command it will restore the original trimmed or non-trimmed edges of a surface. This will vastly reduce the amount of newly added control points of most surfaces that are extruded from- or matched to the surface with rebuilt edges.  
+You can usethis macro with polysurfaces:
+```
+! _Explode
+_RebuildEdges _Enter
+_Join
+```
 
 ### To Infinity...
 ... and beyond. Use `_IPlane` (alias `ip`) any time you need a plane - to trim with, intersect, Boolean operations, etc. You can even `_FilletSrf` to an IP!
@@ -112,15 +112,15 @@ Find out with `_PopUpPopular`.
 Use `_Turntable` for some sick beats.
 
 ### Dual Monitor
-Try `TestMooCow` to synchronize 2 viewports.
+Try `TestMooCow` to synchronize 2 viewports.  
 (EXPERIMENTAL)
 
 ### Flashing
-`TestRandColor`
+`TestRandColor`  
 (EXPERIMENTAL)
 
 ### Sesame Street
-Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
+Easteregg: `Elmo` is still a valid alias for `_Rebuild`.  
 (Why? Because it makes objects soft and friendly...)
 
 <hr>
