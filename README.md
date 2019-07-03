@@ -68,8 +68,8 @@ Give `_SolidPtOn` a try.
 `_MergeAllFaces` command to turn _coplanar polysurface faces_ into one face.
 
 ### Rebuild your edges
-If you use the `RebuildEdges` command it will restore the original trimmed or non-trimmed edges of a surface. This will vastly reduce the amount of newly added control points of most surfaces that are extruded from- or matched to the surface with rebuilt edges.  
-You can usethis macro with polysurfaces:
+If you use the `_RebuildEdges` command it will restore the original trimmed or non-trimmed edges of a surface. This will vastly reduce the amount of newly added control points of most surfaces that are extruded from- or matched to the surface with rebuilt edges.  
+You can use this macro with polysurfaces:
 ```
 ! _Explode
 _RebuildEdges _Enter
