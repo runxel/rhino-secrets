@@ -19,7 +19,7 @@ Ever wondered what the specials chars in commands meant? Or are you always forge
 
 ### Different looking
 Take advantage of the possibility to assign a display mode to an object via `_SetObjectDisplayMode`.  
-![set object display mode](/img/set_obj_display_mode.png "Artic Viewport with transparent paraboloid")
+![Artic Viewport with transparent paraboloid](/img/set_obj_display_mode.png"Artic Viewport with transparent paraboloid")
 
 ### Fast Osnap
 Right-mouse click on an osnap filter in the panel to check that one and uncheck all the others. Right click again to restore the state before.
@@ -44,7 +44,7 @@ Everybody knows <kbd>shift</kbd> for constraining objects orthogonally on plane;
 When prompted for a second point you can also just type in a distance and enter. That constrains the distance from the first point. Then click on something in the correct direction and you're done!
 
 ### Select Last
-While many operations unselect objects that have just been created or modified, `_SelLast` gives and instant access to them.  
+While many operations unselect objects that have just been created or modified, `_SelLast` gives an instant access to them.  
 (Mind that the default option `DeselectOthersBeforeSelect` is set to `Yes`. Have you changed it once it should stick.)
 
 ### Select specific
