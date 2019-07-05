@@ -1,5 +1,5 @@
 # [🦏 Rhino Secrets](https://runxel.github.io/rhino-secrets/)
-A collection of cool stuff and facts on Rhino you might or might not know.
+A collection of cool stuff and lesser known facts on Rhino you might or might not know.
 
 ## Rhino
 
@@ -122,6 +122,9 @@ Try `TestMooCow` to synchronize 2 viewports.
 ### Sesame Street
 Easteregg: `Elmo` is still a valid alias for `_Rebuild`.  
 (Why? Because it makes objects soft and friendly...)
+
+### Running Python scripts from aliases or toolbar buttons
+[Read on the McNeel forum...](https://discourse.mcneel.com/t/running-python-scripts-from-aliases-or-toolbar-buttons/)
 
 <hr>
 
