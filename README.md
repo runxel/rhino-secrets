@@ -34,6 +34,9 @@ Long-press LMB on an object to drag and Rhino will find the closest snapping poi
 ### Fast angle snap
 Hover your mouse over a point during a command and press <kbd>Tab</kbd> to lock the current angle.
 
+### Angles in heaven
+While using a drawing command like `_pline`, you can choose a relative angle to your point by typing in `<angle`. For example: `<35`
+
 ### Elevator mode
 When drawing a polyline <kbd>ctrl</kbd> + <kbd>click</kbd> on your previous point to draw vertical regarding the Cplane.
 
@@ -101,6 +104,10 @@ When Spinning the view with RMB-drag, press/hold <kbd>shift</kbd> to limit spin 
 
 ### Perspective is the way to go
 With `_OneView` you get dynamic CPlanes.
+
+### Calibrate your scale
+If you're projecting your drawing and want to set it to a specific usable scale, you should set your scale (monitor dependent) via `_Zoom1To1Calibrate`.
+![calibrate zoom](/img/zoom_to_calibrate.png)
 
 ### View it like it's 1999
 Because you want it. `_GradientView`
