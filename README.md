@@ -137,3 +137,10 @@ _(Note: at least for me the behaviour is bugged and you need to do this twice, b
 ![red wiring](/img/red-wiring_1.png)
 
 ![red wiring](/img/red-wiring_2.png)
+
+### Have IO descriptors in python
+[Sample file](https://www.grasshopper3d.com/forum/topics/changing-the-description-of-and-input-output-in-python)
+![io](/img/python_io_descr.png)
+
+### Python to native GH component
+[Tutorial on discourse.mcneel.com](https://discourse.mcneel.com/t/tutorial-creating-a-grasshopper-component-with-the-python-ghpy-compiler/)
