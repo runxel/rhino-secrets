@@ -19,7 +19,7 @@ Ever wondered what the specials chars in commands meant? Or are you always forge
 
 ### Different looking
 Take advantage of the possibility to assign a display mode to an object via `_SetObjectDisplayMode`.  
-![Artic Viewport with transparent paraboloid](/img/set_obj_display_mode.png"Artic Viewport with transparent paraboloid")
+![Artic Viewport with transparent paraboloid picture](/img/set_obj_display_mode.png"Artic Viewport with transparent paraboloid")
 
 ### Fast Osnap
 Right-mouse click on an osnap filter in the panel to check that one and uncheck all the others. Right click again to restore the state before.
@@ -107,7 +107,11 @@ With `_OneView` you get dynamic CPlanes.
 
 ### Calibrate your scale
 If you're projecting your drawing and want to set it to a specific usable scale, you should set your scale (monitor dependent) via `_Zoom1To1Calibrate`.
-![calibrate zoom](/img/zoom_to_calibrate.png)
+![calibrate zoom picture](/img/zoom_to_calibrate.png)
+
+### Get the ZBuffer
+With `_ShowZBuffer` you can view a z-buffer output in your viewport. Use the command again to exit the view. Sadly there is currently no way to set a custom render distance – it will be calculated automatically based on the geometry in your scene.  
+![zbuffer picture](/img/zbuffer.png)
 
 ### View it like it's 1999
 Because you want it. `_GradientView`
@@ -137,17 +141,23 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 
 ## Grasshopper
 
+### Geometry Pipeline
+If you haven't already used the "Geometry Pipeline" component in Grasshopper, you should start doing it!  
+The geometry pipeline is a link to the opened Rhino doc which lets you auto-reference any geometry. It _pipes_ your geometry into Grasshopper, based on type, name and layer filters.  
+The notation for the layers is Regex-styele. A double colon `::` is used to get into nested layers.  
+![geo pipeline picture](/img/geo_pipeline.png)
+
 ### What does the red wire do?
 You probably already asked yourself what the red wire does in Grasshopper when you accidentally pressed <kbd>Alt</kbd> on your keyboard while wiring components.  
 The answer: it names e.g. relays!  
 _(Note: at least for me the behaviour is bugged and you need to do this twice, bevor the name gets auto propagated.)_  
-![red wiring](/img/red-wiring_1.png)
+![red wiring picture](/img/red-wiring_1.png)
 
-![red wiring](/img/red-wiring_2.png)
+![red wiring picture](/img/red-wiring_2.png)
 
 ### Have IO descriptors in python
 [Sample file](https://www.grasshopper3d.com/forum/topics/changing-the-description-of-and-input-output-in-python)
-![io](/img/python_io_descr.png)
+![io picture](/img/python_io_descr.png)
 
 ### Python to native GH component
 [Tutorial on discourse.mcneel.com](https://discourse.mcneel.com/t/tutorial-creating-a-grasshopper-component-with-the-python-ghpy-compiler/)
