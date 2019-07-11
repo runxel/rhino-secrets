@@ -145,6 +145,7 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 If you haven't already used the "Geometry Pipeline" component in Grasshopper, you should start doing it!  
 The geometry pipeline is a link to the opened Rhino doc which lets you auto-reference any geometry. It _pipes_ your geometry into Grasshopper, based on type, name and layer filters.  
 The notation for the filter is Regex-style and case sensitive. A double colon `::` is used to get into nested layers.  
+
 | Wildcard | Meaning |
 | --- | --- |
 | `?` | Any single character |
