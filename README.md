@@ -1,6 +1,8 @@
 # [🦏 Rhino Secrets](https://runxel.github.io/rhino-secrets/)
 A collection of cool stuff and lesser known facts on Rhino you might or might not know.
 
+<hr>
+
 ## Rhino
 
 ### Symbols in command line
