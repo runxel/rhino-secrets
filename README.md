@@ -169,7 +169,7 @@ Right click into the GhPython component and choose "Show 'code' input parameter"
 ![code feed into python picture](/img/code_feed_python.png)
 
 If you want to have autocomplete in your editor, you should have a look at the awesome ["Ironstubs"](https://github.com/gtalarico/ironpython-stubs). It's usable in Atom, Sublime Text, Vim and Visual Studio Code.  
-![sublime-large-demo](https://github.com/gtalarico/ironpython-stubs/blob/master/docs/sublime/sublime-demo-large.gif)
+![sublime-large-demo](https://raw.githubusercontent.com/gtalarico/ironpython-stubs/master/docs/sublime/sublime-demo-large.gif)
 
 ### Have IO descriptors in python
 [Sample file](https://www.grasshopper3d.com/forum/topics/changing-the-description-of-and-input-output-in-python)  
