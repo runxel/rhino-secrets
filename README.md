@@ -19,7 +19,7 @@ Ever wondered what the specials chars in commands meant? Or are you always forge
 
 ### Different looking
 Take advantage of the possibility to assign a display mode to an object via `_SetObjectDisplayMode`.  
-![Artic Viewport with transparent paraboloid picture](/img/set_obj_display_mode.png"Artic Viewport with transparent paraboloid")
+![Artic Viewport with transparent paraboloid picture](/img/set_obj_display_mode.png)
 
 ### Fast Osnap
 Right-mouse click on an osnap filter in the panel to check that one and uncheck all the others. Right click again to restore the state before.
@@ -41,7 +41,7 @@ While using a drawing command like `_pline`, you can choose a relative angle to 
 When drawing a polyline <kbd>ctrl</kbd> + <kbd>click</kbd> on your previous point to draw vertical regarding the Cplane.
 
 ### Elevate during drag
-Everybody knows <kbd>shift</kbd> for constraining objects orthogonally on plane; use <kbd>shift + ctrl</kbd> and you can lock it vertically.
+Everybody knows <kbd>shift</kbd> for constraining objects orthogonally on plane; use <kbd>shift</kbd> + <kbd>ctrl</kbd> and you can lock it vertically.
 
 ### Distance
 When prompted for a second point you can also just type in a distance and enter. That constrains the distance from the first point. Then click on something in the correct direction and you're done!
@@ -83,7 +83,7 @@ _Join
 ... and beyond. Use `_IPlane` (alias `ip`) any time you need a plane - to trim with, intersect, Boolean operations, etc. You can even `_FilletSrf` to an IP!
 
 ### Gumball galore
-Use <kbd>shift + ctrl + left click</kbd> to select the faces or edges of polysurfaces. You can then use the gumball to move/scale/rotate the selection.  
+Use <kbd>shift</kbd> + <kbd>ctrl</kbd> + <kbd>left click</kbd> to select the faces or edges of polysurfaces. You can then use the gumball to move/scale/rotate the selection.  
 
 Press <kbd>alt</kbd>, then drag gumball arrow to make a copy.  
 
@@ -95,10 +95,10 @@ Use `-1` for fast mirroring in place.
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/260472052" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
 ### Group-on
-<kbd>Ctrl + shift click</kbd> on an object in a group to select that single object without losing the group. 
+<kbd>Ctrl</kbd> + <kbd>shift</kbd> click on an object in a group to select that single object without losing the group. 
 
 ### They see me rollin'
-<kbd>Ctrl + shift + RMB-drag</kbd> rotates the camera around the cursor (when cursor is hover over any geometry).  
+<kbd>Ctrl</kbd> + <kbd>shift</kbd> + <kbd>RMB-drag</kbd> rotates the camera around the cursor (when cursor is hover over any geometry).  
 
 When Spinning the view with RMB-drag, press/hold <kbd>shift</kbd> to limit spin to dominant initial rotation axis.
 
@@ -127,7 +127,7 @@ Try `TestMooCow` to synchronize 2 viewports.
 (EXPERIMENTAL)
 
 ### Flashing
-`TestRandColor`  
+`TestRandColor` – Epileptics beware!  
 (EXPERIMENTAL)
 
 ### Sesame Street
@@ -135,7 +135,7 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 (Why? Because it makes objects soft and friendly...)
 
 ### Running Python scripts from aliases or toolbar buttons
-[Read on the McNeel forum...](https://discourse.mcneel.com/t/running-python-scripts-from-aliases-or-toolbar-buttons/)
+[Read on the McNeel forum…](https://discourse.mcneel.com/t/running-python-scripts-from-aliases-or-toolbar-buttons/)
 
 <hr>
 
@@ -144,7 +144,15 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 ### Geometry Pipeline
 If you haven't already used the "Geometry Pipeline" component in Grasshopper, you should start doing it!  
 The geometry pipeline is a link to the opened Rhino doc which lets you auto-reference any geometry. It _pipes_ your geometry into Grasshopper, based on type, name and layer filters.  
-The notation for the layers is Regex-styele. A double colon `::` is used to get into nested layers.  
+The notation for the filter is Regex-style and case sensitive. A double colon `::` is used to get into nested layers.  
+| Wildcard | Meaning |
+| --- | --- |
+| `?` | Any single character |
+| `*` | Zero or more character |
+| `#` | Any single digit \[0-9\] |
+| `[chars]` | Any character from inside the brackets |
+| `[!chars]` | Any character _except_ from inside the brackets |
+
 ![geo pipeline picture](/img/geo_pipeline.png)
 
 ### What does the red wire do?
@@ -155,9 +163,17 @@ _(Note: at least for me the behaviour is bugged and you need to do this twice, b
 
 ![red wiring picture](/img/red-wiring_2.png)
 
+### Code in your editor of choice – Run in Grasshopper
+Right click into the GhPython component and choose "Show 'code' input parameter". Now using a "File path" primitive and the "Read File" component we can feed the python component with some external source code.  
+![code feed into python picture](/img/code_feed_python.png)
+
+If you want to have autocomplete in your editor, you should have a look at the awesome ["Ironstubs"](https://github.com/gtalarico/ironpython-stubs). It's usable in Atom, Sublime Text, Vim and Visual Studio Code.  
+![sublime-large-demo](https://github.com/gtalarico/ironpython-stubs/blob/master/docs/sublime/sublime-demo-large.gif)
+
 ### Have IO descriptors in python
-[Sample file](https://www.grasshopper3d.com/forum/topics/changing-the-description-of-and-input-output-in-python)
+[Sample file](https://www.grasshopper3d.com/forum/topics/changing-the-description-of-and-input-output-in-python)  
+
 ![io picture](/img/python_io_descr.png)
 
 ### Python to native GH component
-[Tutorial on discourse.mcneel.com](https://discourse.mcneel.com/t/tutorial-creating-a-grasshopper-component-with-the-python-ghpy-compiler/)
+[Tutorial on discourse.mcneel.com…](https://discourse.mcneel.com/t/tutorial-creating-a-grasshopper-component-with-the-python-ghpy-compiler/)
