@@ -166,6 +166,10 @@ _(Note: at least for me the behaviour is bugged and you need to do this twice, b
 
 ![red wiring picture](/img/red-wiring_2.png)
 
+### Old components
+There might be the need have an old component in your Grasshopper definition, be it due to exchange with someone who is still on Rhino 5 or whatever.  
+Searching for the component but putting a `#` in front will yield those old components.
+
 ### Code in your editor of choice – Run in Grasshopper
 Right click into the GhPython component and choose "Show 'code' input parameter". Now using a "File path" primitive and the "Read File" component we can feed the python component with some external source code.  
 ![code feed into python picture](/img/code_feed_python.png)
