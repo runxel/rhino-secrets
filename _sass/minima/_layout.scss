@@ -5,7 +5,7 @@
   text-align: center;
 }
 .my_toc::before {
-  content: "Go to:"
+  content: "Go to:";
   display: block;
   text-align: center;
 }
@@ -19,6 +19,7 @@
   list-style-type: none;
   display: inline-block;
   -moz-appearance: button;
+  appearance: button;
   font-weight: $base-font-weight + 200;
   box-shadow: 5px 5px 0 0 $brand-color-lite;
 }
