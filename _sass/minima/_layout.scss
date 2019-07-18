@@ -1,3 +1,29 @@
+/*
+ * Table of Contents
+ */
+.my_toc {
+  text-align: center;
+}
+.my_toc::before {
+  content: "Go to:"
+  display: block;
+  text-align: center;
+}
+.my_toc li {
+  border: 2px solid $brand-color;
+  width: 50%;
+  padding: 5px;
+  margin: 7px;
+  vertical-align: middle;
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  -moz-appearance: button;
+  font-weight: $base-font-weight + 200;
+  box-shadow: 5px 5px 0 0 $brand-color-lite;
+}
+
+
 /**
  * Site header
  */
