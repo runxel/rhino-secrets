@@ -16,6 +16,10 @@
 
 		<main class="page-content" aria-label="Content">
 			<div class="wrapper">
+				<!-- surely we want a ToC -->
+				<!-- https://github.com/allejo/jekyll-toc -->
+				{% include toc.html html=content h_min=3 h_max=3 %}
+				<hr>
 				<!-- instead of {{ content }} -->
 				<!-- we use a liquid tag -->
 				<!-- so we can enjoy js-free anchors in jekyll -->
