@@ -36,7 +36,7 @@ Long-press LMB on an object to drag and Rhino will find the closest snapping poi
 ### Fast angle snap
 Hover your mouse over a point during a command and press <kbd>Tab</kbd> to lock the current angle.
 
-### Angles in heaven
+### Quick angles
 While using a drawing command like `_pline`, you can choose a relative angle to your point by typing in `<angle`. For example: `<35`
 
 ### Elevator mode
@@ -50,7 +50,7 @@ When prompted for a second point you can also just type in a distance and enter.
 
 ### Select Last
 While many operations unselect objects that have just been created or modified, `_SelLast` gives an instant access to them.  
-(Mind that the default option `DeselectOthersBeforeSelect` is set to `Yes`. Have you changed it once it should stick.)
+(Mind that the default option `DeselectOthersBeforeSelect` is set to `Yes`. Having changed it once the option will stick.)
 
 ### Select specific
 `_SelectionFilter` gives you a dockable menu which let you omit whatever geometry types you want from being selected.
@@ -59,18 +59,19 @@ While many operations unselect objects that have just been created or modified, 
 When selecting in dense environments, you often want to select around something, but then once clicking to drag your selection window, it already selects something and you end up dragging geometry instead. This can be avoided using the <kbd>alt</kbd> button while making the selection.
 
 ### Coordinates
-When Rhino prompts for a "next point", typing `.x`, `.y` or `.z` (or even combinations like `.zx`) constrains the following point input to that coordinate. Very useful when selecting points in different viewports.
+When Rhino prompts for a "next point", typing `.x`, `.y` or `.z` (or even combinations like `.zx`) constrains the following point input to that coordinate type. Very useful when selecting points in different viewports.
 
 ### Easy Polysurface editing
-Give `_SolidPtOn` a try.
+Give `_SolidPtOn` a try.  
+![solidpt picture](/img/solidpton.png)
 
 ### Move on
 ... with `_MoveUVN`. Works beatifully with `_SelU` and `_SelV`.
 
 ### Surfaces want to be one
-`_MergeSrf` command to join surfaces together without making a polysurface (makes a new single surface, even if surfaces are not co-planar).  
+`_MergeAllFaces` command to turn _coplanar polysurface faces_ into one face.  
 
-`_MergeAllFaces` command to turn _coplanar polysurface faces_ into one face.
+`_MergeSrf` command to join surfaces together without making a polysurface (makes a new single surface, even if surfaces are not co-planar).
 
 ### Rebuild your edges
 If you use the `_RebuildEdges` command it will restore the original trimmed or non-trimmed edges of a surface. This will vastly reduce the amount of newly added control points of most surfaces that are extruded from- or matched to the surface with rebuilt edges.  
@@ -82,7 +83,7 @@ _Join
 ```
 
 ### To Infinity...
-... and beyond. Use `_IPlane` (alias `ip`) any time you need a plane - to trim with, intersect, Boolean operations, etc. You can even `_FilletSrf` to an IP!
+... and beyond. Use `_IPlane` (alias `ip`) any time you need a plane – to trim with, intersect, Boolean operations, etc. You can even `_FilletSrf` to an IP!
 
 ### Gumball galore
 Use <kbd>shift</kbd> + <kbd>ctrl</kbd> + <kbd>left click</kbd> to select the faces or edges of polysurfaces. You can then use the gumball to move/scale/rotate the selection.  
@@ -100,12 +101,13 @@ Use `-1` for fast mirroring in place.
 <kbd>Ctrl</kbd> + <kbd>shift</kbd> click on an object in a group to select that single object without losing the group. 
 
 ### They see me rollin'
-<kbd>Ctrl</kbd> + <kbd>shift</kbd> + <kbd>RMB-drag</kbd> rotates the camera around the cursor (when cursor is hover over any geometry).  
+<kbd>Ctrl</kbd> + <kbd>shift</kbd> + <kbd>RMB-drag</kbd> rotates the camera around the cursor (as long the cursor is hovering over any geometry).  
 
-When Spinning the view with RMB-drag, press/hold <kbd>shift</kbd> to limit spin to dominant initial rotation axis.
+When spinning the view with RMB-drag, press/hold <kbd>shift</kbd> to limit spin to dominant initial rotation axis.
 
 ### Perspective is the way to go
-With `_OneView` you get dynamic CPlanes.
+With `_OneView` you get dynamic CPlanes in your perspective viewport.  
+![oneview gif](/img/oneview.gif)
 
 ### Calibrate your scale
 If you're projecting your drawing and want to set it to a specific usable scale, you should set your scale (monitor dependent) via `_Zoom1To1Calibrate`.
@@ -118,18 +120,23 @@ With `_ShowZBuffer` you can view a z-buffer output in your viewport. Use the com
 ### View it like it's 1999
 Because you want it. `_GradientView`
 
+### Adding languages to Rhino
+[See on the McNeel Wiki…](https://wiki.mcneel.com/rhino/6/addlanguages)
+
 ### What are your favorites?
-Find out with `_PopUpPopular`.
+Find your favorite commands in this session with `_PopUpPopular`.
 
 ### Be a DJ
-Use `_Turntable` for some sick beats.
+Use `_Turntable` to let your camera rotate around your scene. Only thing missing: some sick beats.
 
 ### Dual Monitor
 Try `TestMooCow` to synchronize 2 viewports.  
+{: .exp}
 (EXPERIMENTAL)
 
 ### Flashing
 `TestRandColor` – Epileptics beware!  
+{: .exp}
 (EXPERIMENTAL)
 
 ### Sesame Street
@@ -160,11 +167,9 @@ The notation for the filter is Regex-style and case sensitive. A double colon `:
 
 ### What does the red wire do?
 You probably already asked yourself what the red wire does in Grasshopper when you accidentally pressed <kbd>Alt</kbd> on your keyboard while wiring components.  
-The answer: it names e.g. relays!  
+The answer: it names relays and also other inputs!  
 _(Note: at least for me the behaviour is bugged and you need to do this twice, bevor the name gets auto propagated.)_  
-![red wiring picture](/img/red-wiring_1.png)
-
-![red wiring picture](/img/red-wiring_2.png)
+![red wiring picture](/img/red_wiring.png)
 
 ### Old components
 There might be the need have an old component in your Grasshopper definition, be it due to exchange with someone who is still on Rhino 5 or whatever.  
