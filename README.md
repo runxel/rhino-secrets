@@ -132,13 +132,13 @@ Use `_Turntable` to let your camera rotate around your scene. Only thing missing
 ### Dual Monitor
 Try `TestMooCow` to synchronize 2 viewports.  
 
-(EXPERIMENTAL)
+EXPERIMENTAL
 {: .exp}
 
 ### Flashing
 `TestRandColor` – Epileptics beware!  
 
-(EXPERIMENTAL)
+EXPERIMENTAL
 {: .exp}
 
 ### Sesame Street
