@@ -131,13 +131,13 @@ Use `_Turntable` to let your camera rotate around your scene. Only thing missing
 
 ### Dual Monitor
 Try `TestMooCow` to synchronize 2 viewports.  
-{: .exp}
 (EXPERIMENTAL)
+{: .exp}
 
 ### Flashing
 `TestRandColor` – Epileptics beware!  
-{: .exp}
 (EXPERIMENTAL)
+{: .exp}
 
 ### Sesame Street
 Easteregg: `Elmo` is still a valid alias for `_Rebuild`.  
