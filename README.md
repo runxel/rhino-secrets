@@ -6,7 +6,8 @@ A collection of cool stuff and lesser known facts on Rhino you might or might no
 ## Rhino
 
 ### Explain NURBS to me
-Go and see this wonderful explanation: [«Nurbs is just and acronym»…](https://wordsandbuttons.online/nurbs_is_just_an_acronym.html)
+Go and see this wonderful explanation: [«Nurbs is just an acronym»…](https://wordsandbuttons.online/nurbs_is_just_an_acronym.html)  
+![nurbs explaination picture](/img/explain_nurbs.png)
 
 ### Symbols in command line
 Ever wondered what the specials chars in commands meant? Or are you always forgetting?  
