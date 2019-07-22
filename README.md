@@ -5,6 +5,9 @@ A collection of cool stuff and lesser known facts on Rhino you might or might no
 
 ## Rhino
 
+### Explain NURBS to me
+Go and see this wonderful explanation: [«Nurbs is just and acronym»…](https://wordsandbuttons.online/nurbs_is_just_an_acronym.html)
+
 ### Symbols in command line
 Ever wondered what the specials chars in commands meant? Or are you always forgetting?  
 
@@ -116,6 +119,9 @@ If you're projecting your drawing and want to set it to a specific usable scale,
 ### Get the ZBuffer
 With `_ShowZBuffer` you can view a z-buffer output in your viewport. Use the command again to exit the view. Sadly there is currently no way to set a custom render distance – it will be calculated automatically based on the geometry in your scene.  
 ![zbuffer picture](/img/zbuffer.png)
+
+### Render mesh
+Sometimes it might be necessary to see the render mesh of an object. You could achieve this by typing in `_ShowRenderMesh`, but a better way is the command `_ToggleRenderMesh`. This way you can use the same command for showing and hiding the render mesh. Both commands are not available by menu or toolbar, so it might be helpful to create it.
 
 ### View it like it's 1999
 Because you want it. `_GradientView`
