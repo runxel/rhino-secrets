@@ -23,6 +23,14 @@ Ever wondered what the specials chars in commands meant? Or are you always forge
 | `~` | Suppresses command options for clutter free command feedback. |
 | `;` | Comment. (used in macros) |
 
+### Find layer
+Every so often you are in need of finding the layer the object is in – in the layer tree. Of course we can see the layer name of the selected object in the statusbar, but when working with many (and possibly similar named) layers this information alone is sometimes not enough.  
+With the object select go to your layers panel and click on the hammer icon, then choose "Select Object Layer". Rhino will unfold the layer structure for you and and highlight the right layer.
+
+### Fast layer assign
+To change the layer of the selected object(s) click on the layer name in statusbar and choose another layer.  
+Since this pop-up is actually a full-fledged layer manager you can also set your current layer (when no object is selected), or hide/show and lock/unlock layers.
+
 ### Different looking
 Take advantage of the possibility to assign a display mode to an object via `_SetObjectDisplayMode`.  
 ![Artic Viewport with transparent paraboloid picture](/img/set_obj_display_mode.png)
