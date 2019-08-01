@@ -6,7 +6,7 @@ A collection of cool stuff and lesser known facts on Rhino you might or might no
 ## Rhino
 
 ### Explain NURBS to me
-Go and see this wonderful explanation: [«Nurbs is just an acronym»…](https://wordsandbuttons.online/nurbs_is_just_an_acronym.html)  
+Go and see this wonderful explanation: [«Nurbs is just an acronym»](https://wordsandbuttons.online/nurbs_is_just_an_acronym.html)  
 ![nurbs explaination picture](/img/explain_nurbs.png)
 
 ### Symbols in command line
@@ -136,7 +136,7 @@ Sometimes it might be necessary to see the render mesh of an object. You could a
 Because you want it. `_GradientView`
 
 ### Adding languages to Rhino
-[See on the McNeel Wiki…](https://wiki.mcneel.com/rhino/6/addlanguages)
+[See on the McNeel Wiki](https://wiki.mcneel.com/rhino/6/addlanguages)
 
 ### What are your favorites?
 Find your favorite commands in this session with `_PopUpPopular`.
@@ -161,7 +161,7 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 (Why? Because it makes objects soft and friendly...)
 
 ### Running Python scripts from aliases or toolbar buttons
-[Read on the McNeel forum…](https://discourse.mcneel.com/t/running-python-scripts-from-aliases-or-toolbar-buttons/)
+[Read on the McNeel forum](https://discourse.mcneel.com/t/running-python-scripts-from-aliases-or-toolbar-buttons/)
 
 <hr>
 
@@ -205,4 +205,4 @@ If you want to have autocomplete in your editor, you should have a look at the a
 ![io picture](/img/python_io_descr.png)
 
 ### Python to native GH component
-[Tutorial on discourse.mcneel.com…](https://discourse.mcneel.com/t/tutorial-creating-a-grasshopper-component-with-the-python-ghpy-compiler/)
+[Tutorial on discourse.mcneel.com](https://discourse.mcneel.com/t/tutorial-creating-a-grasshopper-component-with-the-python-ghpy-compiler/)

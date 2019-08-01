@@ -98,6 +98,10 @@ a {
     color: $text-color;
     text-decoration: underline;
   }
+  
+  &[href*="//"]:not([href*="runxel.github.io"])::after {
+    content: "↗";
+  }
 
   .social-media-list &:hover {
     text-decoration: none;
