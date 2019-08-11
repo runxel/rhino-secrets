@@ -167,6 +167,15 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 
 ## Grasshopper
 
+### Understanding Data Trees
+The famous [https://vimeo.com/channels/datatreegh]('Data Trees Masterclass with David Rutten') is highly recommended to watch.
+
+Also have a look at this wonderful [/files/Data-Trees-by-Andrew-Heuman.pdf](PDF) made by Andrew Heumann from which the following figures were taken:
+
+![Data trees architectural explanation picture](/img/data_trees_expl_arch.png)
+
+![Data trees explanation picture](/img/data_trees_expl.png)
+
 ### Geometry Pipeline
 If you haven't already used the "Geometry Pipeline" component in Grasshopper, you should start doing it!  
 The geometry pipeline is a link to the opened Rhino doc which lets you auto-reference any geometry. It _pipes_ your geometry into Grasshopper, based on type, name and layer filters.  
