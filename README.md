@@ -168,9 +168,9 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 ## Grasshopper
 
 ### Understanding Data Trees
-The famous [https://vimeo.com/channels/datatreegh]('Data Trees Masterclass with David Rutten') is highly recommended to watch.
+The famous ['Data Trees Masterclass with David Rutten'](https://vimeo.com/channels/datatreegh) is highly recommended to watch.
 
-Also have a look at this wonderful [/files/Data-Trees-by-Andrew-Heuman.pdf](PDF) made by Andrew Heumann from which the following figures were taken:
+Also have a look at this wonderful [PDF](/files/Data-Trees-by-Andrew-Heuman.pdf) made by Andrew Heumann from which the following figures were taken:
 
 ![Data trees architectural explanation picture](/img/data_trees_expl_arch.png)
 
