@@ -1,3 +1,9 @@
 theme: minima
+permalink: pretty
 plugins:
   - jekyll-sitemap
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+  
