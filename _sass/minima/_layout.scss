@@ -228,6 +228,9 @@
   @include relative-font-size(2);
   display: none; /*changed*/
 }
+header .post-title {
+  display: none; /*changed-new*/
+}
 
 .post-list-heading {
   @include relative-font-size(1.75);
