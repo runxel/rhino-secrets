@@ -208,7 +208,7 @@ Some components and objects support initialisation codes, which means you can as
 | `f([…[,…[,…]]]) [= *]` | If the format starts with a lower case _f_ followed by an opening bracket, an Expression component is created. A list of comma separated arguments can be provided as inputs, and anything after the optional equals symbol becomes the expression string. Example: `f(x, y) = x^2 + sin(y)` | 
 | `#…` | A hash infront will yield old components. |
 
-Note that decimal places will be harvested from formats that indicate sliders. I.e. the format 0..2..10 is not the same as 0..2..10.00, as the former will create an integer slider from zero to ten whereas the latter will create a floating point slider with two decimal places from zero to ten.
+Note that decimal places will be harvested from formats that indicate sliders. I.e. the format `0..2..10` is not the same as `0..2..10.00`, as the former will create an integer slider from zero to ten whereas the latter will create a floating point slider with two decimal places from zero to ten.
 
 ### Panel Special Codes
 When enabled in the right-click menu of a panel, special character combinations in curly braces will be replaced by other characters.
@@ -241,6 +241,72 @@ The notation for the filter is Regex-style and case sensitive. A double colon `:
 | `[!chars]` | Any character _except_ from inside the brackets |
 
 ![geo pipeline picture](/img/geo_pipeline.png)
+
+### Data Tree Selection Rules
+The following rules will work with the \[Path Compare\] <img src="http://rhino.github.io/icons/Sets/Path_Compare.png" alt="">, \[Split Tree\] <img src="http://rhino.github.io/icons/Sets/Split_Tree.png" alt=""> and \[Replace Path\] <img src="http://rhino.github.io/icons/Sets/Replace_Paths.png" alt=""> components.  
+
+Imagine we have the following data tree, containing a bunch of textual characters:  
+```
+{0;0} = [a,e,i,o,u,y]
+{0;1} = [ä,ë,ê,ï,î,ö,ô,õ,ü,û,ÿ,ý]
+{1;0} = [b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,z]
+{1;1} = [ç,ĉ,č,ĝ,ř,š,ş,ž]
+```
+There are a total of four branches `{0;0}`, `{0;1}`, `{1;0}` and `{1;1}`. The first branch contains all the vowels that are part of the standard English alphabet. The second branch contains all non-standard vowels and branches three and four contain the standard and non-standard consonants respectively.  
+So what if we want to select from this tree only the standard vowels? Basically include everything in the first branch and disregard everything else. We can use the \[Tree Split\] component with a selection rule to achieve this: `{0;0}`  
+This selection rule hard-codes the number zero in both tree path locations. It doesn't define an item index rule, so all items in `{0;0}` will be selected.
+
+If we want _all_ the vowels (both standard and non-standard), then we have several options:  
+```
+{0;?}        = select all branches that start with 0
+{0;(0,1)}    = select all branches that start with 0 and end in either 0 or 1
+{0;(0 to 1)} =    .................................. and end in the range 0 to 1.
+```
+
+Conversely, selecting all standard vowels and consonants while disregarding all non-standard character can be achieved with rules as follows:  
+```
+{?;0}
+{(0,1);0}
+{(0 to 1);0}
+```
+
+It is also possible to select items from each branch in addition to limiting the selection to specific branches. In this case another rule stated in square brackets needs to be appended:  
+`{0;?}[0 to 2]`  
+The above rule will select the first three vowels from the standard and the non-standard lists.
+
+Basically, rules work in a very consistent way, but there are some syntax conventions you need to know. The first thing to realize is that every individual piece of data in a data-tree can be uniquely and unambiguously identified by a collection of integers. One integer describes its index within the branch and the others are used to identify the branch within the tree. As a result a rule for selection items always looks the same:  
+```
+{A;B;C;...;Z}[i]              where A, B, C, Z and i represent rules.
+```
+All in all it's very similar to the Path Mapper syntax.
+
+
+| Rule Notations | Explanation |
+| --- | --- |
+| `*` | Any number of integers in a path. |
+| `?` | Any single integer. |
+| `d` | Any specific integer. |
+| `!d` | Anything _except_ a specific integer. |
+| `< d` |  Any number smaller than `d`. This notation is shorthand for `\[0 to d\]`. |
+| `<= d` | Any number equal to or smaller than `d`. This notation is shorthand for `\[0 to d\]`. |
+| `> d` | Any number larger than `d`. This notation is shorthand for `[d to infinity]`. |
+| `>= d` | Any number larger than or equal to `d`. This notation is shorthand for `[d to infinity]`. |
+| `(2,6,7)` | Any one of the specific integers in this group. |
+| `!(2,6,7)` | Anything _except_ one of the integers in this group. |
+| `(2 to 20)` | Any integer in this range (including both 2 and 20). |
+| `!(2 to 20)` | Any integer _outside_ this range. |
+| `(0,2,...)` | Any integer part of this infinite sequence. Sequences have to be at least two integers long, and every subsequent integer has to be bigger than the previous one. |
+| `(0,2,...,48)` | Any integer part of this finite sequence. |
+| `!(3,5,...)` | Any integer _not_ part of this infinite sequence. The sequence doesn't extend to the left, only towards the right. So this rule would select the numbers 0, 1, 2, 4, 6, 8, 10, 12 and all remaining even numbers. |
+| `!(7,10,21,...,425)` | Any integer _not_ part of this finite sequence. |
+
+Furthermore, it is possible to combine two or more rules using the boolean and/or operators. If you want to select the first five items in every list of a datatree and also the items 7, 12 and 42, then the selection rule would look as follows: `{*}[(0 to 4) or (6,11,41)]`  
+
+The asterisk allows you to include all branches, no matter what their paths looks like.
+
+
+See also this webinar by David Rutten aimed at experienced users:  
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/78886857?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ### What does the red wire do?
 You probably already asked yourself what the red wire does in Grasshopper when you accidentally pressed <kbd>Alt</kbd> on your keyboard while wiring components.  
