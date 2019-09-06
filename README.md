@@ -165,7 +165,7 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 
 <hr>
 
-## Grasshopper
+## Grasshopper 1.0
 
 ### Understanding Data Trees
 The famous ['Data Trees Masterclass with David Rutten'](https://vimeo.com/channels/datatreegh) is highly recommended to watch.
@@ -190,6 +190,14 @@ The notation for the filter is Regex-style and case sensitive. A double colon `:
 | `[!chars]` | Any character _except_ from inside the brackets |
 
 ![geo pipeline picture](/img/geo_pipeline.png)
+
+### Panel Special Codes
+When enabled in the right-click menu of a panel, special character combinations in curly braces will be replaced by other characters.
+
+![panel special codes picture](/img/panel-special-codes.png)
+
+The attached file shows all predefined mapping pairs. This data is always up to date as it is harvested directly from the panel API itself.
+[Panel Mappings Gh example file](/files/panelmappings.gh)
 
 ### What does the red wire do?
 You probably already asked yourself what the red wire does in Grasshopper when you accidentally pressed <kbd>Alt</kbd> on your keyboard while wiring components.  
