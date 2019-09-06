@@ -214,11 +214,39 @@ The answer: it names relays and also other inputs!
 _(Note: at least for me the behaviour is bugged and you need to do this twice, bevor the name gets auto propagated.)_  
 ![red wiring picture](/img/red_wiring.png)
 
-### Old components
-There might be the need have an old component in your Grasshopper definition, be it due to exchange with someone who is still on Rhino 5 or whatever.  
-Searching for the component but putting a `#` in front will yield those old components.
+### Pop Up Shortcuts
+The double click popup window for inserting components accepts a number of different input formats. If you provide a plain component name (or the abbreviation or a word used in the description) then you will see a list of potential matches, sorted from most relevant to least relevant:  
+![pop up sorting picture](/img/pop-up-1.png)
 
-Another "special" characters are `"` – which will make a panel with the text you put after the quote – and `~`. The tilde will make a scribble.
+Some components and objects support initialisation codes, which means you can assign certain values directly from the popup box. You can do this by adding an equals symbol after the name and then the value you wish to assign. For example, the \[Curve Offset\] component allows you to specify the offset distance via the popup box by typing `=5` after the offset command:  
+![pop up init picture](/img/pop-up-2.png)
+
+| Special popup formats | Explanation |
+| --- | --- |
+| `"…` | If the format starts with a double quote, then the entire contents (minus any other double quotes) will be placed into a Text Panel. |
+| `//…` | Two forward slashes also generats a Text Panel. |
+| `~…` | If the format starts with a tilde, then the entire contents will be placed in a Scribble object. |
+| `d,d[,d]` | If the format contains two or three numerics separated by commas, a Point parameter will be created with the specified coordinates. |
+| `+[d]` | Plus creates an Addition compononent. |
+| `-[d]` | Minus creates a Subtraction component. |
+| `*[d]` | Asterisk creates a Multiplication component. |
+| `/[d]` | One forward slash creates a Division component. |
+| `\[d]` | A backward slash will create an Integer Division component. |
+| `%[d]` | The percent symbol creates a Modulus component. |
+| `&…` | The ampersand creates a Concatenation component. |
+| `=…` | The equals symbol creates an Equality component. |
+| `<` | Creates a Smaller Than component. |
+| `>` | Creates a Larger Than component. |
+| `[d *] Pi` | If the format contains the text "Pi" with an optional multiplication factor, then a Pi component will be created. |
+| `d` | If the format can be evaluated as a single numeric value, then a Slider will be created with the specified initial value and sensible™ lower and upper limits. |
+| `d<d` or `d..d` | Two numerics separated by a smaller than symbol or by two or more consecutive dots will create a Slider with the specified limits. The initial slider value will be equal to the lower limit. |
+| `d<d<d` or `d..d..d` | Three numerics separated by a smaller than symbol or by two or more consecutive dots will create a Slider with the specified limits. The initial slider value will be the value in the middle.|
+| `d/d/[d]` | Two or three numerics separated by forward slashes will create a Calendar object. The order of value is *day/month/year*. If year is omitted then the current year is used. Note that a second slash is required because `#/#` is interpreted as a number and thus results in a Slider. |
+| `#:#[:#] [am/pm]` | If the format contains at least two numerics separated by a colon, a Clock object is created. Seconds are optional, as are am/pm suffixes. |
+| `f([…[,…[,…]]]) [= *]` | If the format starts with a lower case _f_ followed by an opening bracket, an Expression component is created. A list of comma separated arguments can be provided as inputs, and anything after the optional equals symbol becomes the expression string. Example: `f(x, y) = x^2 + sin(y)` | 
+| `#…` | A hash infront will yield old components. |
+
+Note that decimal places will be harvested from formats that indicate sliders. I.e. the format 0..2..10 is not the same as 0..2..10.00, as the former will create an integer slider from zero to ten whereas the latter will create a floating point slider with two decimal places from zero to ten.
 
 ### Code in your editor of choice – Run in Grasshopper
 Right click into the GhPython component and choose "Show 'code' input parameter". Now using a "File path" primitive and the "Read File" component we can feed the python component with some external source code.  
