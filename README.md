@@ -196,7 +196,16 @@ When enabled in the right-click menu of a panel, special character combinations 
 
 ![panel special codes picture](/img/panel-special-codes.png)
 
-The attached file shows all predefined mapping pairs. This data is always up to date as it is harvested directly from the panel API itself.
+
+| Examples | Look when option enabled |
+| --- | --- |
+| `3{dot}10{^-3} {times} 2{dot}10{^+7} = 6{dot}10{^+4}` | 3·10⁻³ × 2·10⁺⁷ = 6·10⁺⁴ |
+| `N{_n-1} + N{_n+2}` | Nₙ₋₁ + Nₙ₊₂ |
+| `Copyright {copyright} 2019` | Copyright © 2019 |
+| `1.00{dollar} {right} 0.89{euro}` | 1.00$ → 0.89€ |
+| `I'm {---} really {---} impressed by this.` | I'm — really — impressed by this. |
+
+The attached file shows all predefined mapping pairs. This data is always up to date as it is harvested directly from the panel API itself.  
 [Panel Mappings Gh example file](/files/panelmappings.gh)
 
 ### What does the red wire do?
