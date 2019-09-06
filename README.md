@@ -176,44 +176,6 @@ Also have a look at this wonderful [PDF](/files/Data-Trees-by-Andrew-Heuman.pdf)
 
 ![Data trees explanation picture](/img/data_tree_expl.png)
 
-### Geometry Pipeline
-If you haven't already used the "Geometry Pipeline" component in Grasshopper, you should start doing it!  
-The geometry pipeline is a link to the opened Rhino doc which lets you auto-reference any geometry. It _pipes_ your geometry into Grasshopper, based on type, name and layer filters.  
-The notation for the filter is Regex-style and case sensitive. A double colon `::` is used to get into nested layers.  
-
-| Wildcard | Meaning |
-| --- | --- |
-| `?` | Any single character |
-| `*` | Zero or more character |
-| `#` | Any single digit \[0-9\] |
-| `[chars]` | Any character from inside the brackets |
-| `[!chars]` | Any character _except_ from inside the brackets |
-
-![geo pipeline picture](/img/geo_pipeline.png)
-
-### Panel Special Codes
-When enabled in the right-click menu of a panel, special character combinations in curly braces will be replaced by other characters.
-
-![panel special codes picture](/img/panel-special-codes.png)
-
-
-| Examples | Look when option enabled |
-| --- | --- |
-| `3{dot}10{^-3} {times} 2{dot}10{^+7} = 6{dot}10{^+4}` | 3·10⁻³ × 2·10⁺⁷ = 6·10⁺⁴ |
-| `N{_n-1} + N{_n+2}` | Nₙ₋₁ + Nₙ₊₂ |
-| `Copyright {copyright} 2019` | Copyright © 2019 |
-| `1.00{dollar} {right} 0.89{euro}` | 1.00$ → 0.89€ |
-| `I'm {---} really {---} impressed by this.` | I'm — really — impressed by this. |
-
-The attached file shows all predefined mapping pairs. This data is always up to date as it is harvested directly from the panel API itself.  
-[Panel Mappings Gh example file](/files/panelmappings.gh)
-
-### What does the red wire do?
-You probably already asked yourself what the red wire does in Grasshopper when you accidentally pressed <kbd>Alt</kbd> on your keyboard while wiring components.  
-The answer: it names relays and also other inputs!  
-_(Note: at least for me the behaviour is bugged and you need to do this twice, bevor the name gets auto propagated.)_  
-![red wiring picture](/img/red_wiring.png)
-
 ### Pop Up Shortcuts
 The double click popup window for inserting components accepts a number of different input formats. If you provide a plain component name (or the abbreviation or a word used in the description) then you will see a list of potential matches, sorted from most relevant to least relevant:  
 ![pop up sorting picture](/img/pop-up-1.png)
@@ -248,6 +210,44 @@ Some components and objects support initialisation codes, which means you can as
 
 Note that decimal places will be harvested from formats that indicate sliders. I.e. the format 0..2..10 is not the same as 0..2..10.00, as the former will create an integer slider from zero to ten whereas the latter will create a floating point slider with two decimal places from zero to ten.
 
+### Panel Special Codes
+When enabled in the right-click menu of a panel, special character combinations in curly braces will be replaced by other characters.
+
+![panel special codes picture](/img/panel-special-codes.png)
+
+
+| Examples | Look when option enabled |
+| --- | --- |
+| `3{dot}10{^-3} {times} 2{dot}10{^+7} = 6{dot}10{^+4}` | 3·10⁻³ × 2·10⁺⁷ = 6·10⁺⁴ |
+| `N{_n-1} + N{_n+2}` | Nₙ₋₁ + Nₙ₊₂ |
+| `Copyright {copyright} 2019` | Copyright © 2019 |
+| `1.00{dollar} {right} 0.89{euro}` | 1.00$ → 0.89€ |
+| `I'm {---} really {---} impressed by this.` | I'm — really — impressed by this. |
+
+The attached file shows all predefined mapping pairs. This data is always up to date as it is harvested directly from the panel API itself.  
+[Panel Mappings Gh example file](/files/panelmappings.gh)
+
+### Geometry Pipeline
+If you haven't already used the "Geometry Pipeline" component in Grasshopper, you should start doing it!  
+The geometry pipeline is a link to the opened Rhino doc which lets you auto-reference any geometry. It _pipes_ your geometry into Grasshopper, based on type, name and layer filters.  
+The notation for the filter is Regex-style and case sensitive. A double colon `::` is used to get into nested layers.  
+
+| Wildcard | Meaning |
+| --- | --- |
+| `?` | Any single character |
+| `*` | Zero or more character |
+| `#` | Any single digit \[0-9\] |
+| `[chars]` | Any character from inside the brackets |
+| `[!chars]` | Any character _except_ from inside the brackets |
+
+![geo pipeline picture](/img/geo_pipeline.png)
+
+### What does the red wire do?
+You probably already asked yourself what the red wire does in Grasshopper when you accidentally pressed <kbd>Alt</kbd> on your keyboard while wiring components.  
+The answer: it names relays and also other inputs!  
+_(Note: at least for me the behaviour is bugged and you need to do this twice, bevor the name gets auto propagated.)_  
+![red wiring picture](/img/red_wiring.png)
+
 ### Code in your editor of choice – Run in Grasshopper
 Right click into the GhPython component and choose "Show 'code' input parameter". Now using a "File path" primitive and the "Read File" component we can feed the python component with some external source code.  
 ![code feed into python picture](/img/code_feed_python.png)
@@ -256,7 +256,7 @@ If you want to have autocomplete in your editor, you should have a look at the a
 ![sublime-large-demo](https://raw.githubusercontent.com/gtalarico/ironpython-stubs/master/docs/sublime/sublime-demo-large.gif)
 
 ### Have IO descriptors in python
-[Sample file](https://www.grasshopper3d.com/forum/topics/changing-the-description-of-and-input-output-in-python)  
+[Sample file](/files/inputDescription.gh)  
 
 ![io picture](/img/python_io_descr.png)
 
