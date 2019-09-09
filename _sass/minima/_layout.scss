@@ -215,8 +215,8 @@
 }
 
 .heart {
-  color: var(--brand-color);
-  text-shadow: 0 0 5px #fff, 0 0 10px var(--brand-color);
+  color: $brand-color;
+  text-shadow: 0 0 5px #fff, 0 0 10px $brand-color;
 }
 .mirror-v { /* mirror along the vertical axis to fake a copyleft sign */
   display: inline-block; /* thats important here to work for in spans! */
