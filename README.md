@@ -176,6 +176,11 @@ Also have a look at this wonderful [PDF](/files/Data-Trees-by-Andrew-Heuman.pdf)
 
 ![Data trees explanation picture](/img/data_tree_expl.png)
 
+### Find a certain component
+If you see a component where you don't know from which tab it came you can can <kbd>ctrl</kbd> + <kbd>alt</kbd> left-click it. It will show you the location:
+
+![Where is the component? picture](/img/where-component.png)
+
 ### Pop Up Shortcuts
 The double click popup window for inserting components accepts a number of different input formats. If you provide a plain component name (or the abbreviation or a word used in the description) then you will see a list of potential matches, sorted from most relevant to least relevant:  
 ![pop up sorting picture](/img/pop-up-1.png)
