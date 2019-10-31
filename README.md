@@ -248,7 +248,7 @@ The notation for the filter is Regex-style and case sensitive. A double colon `:
 ![geo pipeline picture](/img/geo_pipeline.png)
 
 ### Data Tree Selection Rules
-The following rules will work with the \[Path Compare\] <img src="http://rhino.github.io/icons/Sets/Path_Compare.png" alt="">, \[Split Tree\] <img src="http://rhino.github.io/icons/Sets/Split_Tree.png" alt=""> and \[Replace Path\] <img src="http://rhino.github.io/icons/Sets/Replace_Paths.png" alt=""> components.  
+The following rules will work with the \[Path Compare\] <img src="https://rhino.github.io/icons/Sets/Path_Compare.png" alt="">, \[Split Tree\] <img src="https://rhino.github.io/icons/Sets/Split_Tree.png" alt=""> and \[Replace Path\] <img src="https://rhino.github.io/icons/Sets/Replace_Paths.png" alt=""> components.  
 
 Imagine we have the following data tree, containing a bunch of textual characters:  
 ```
