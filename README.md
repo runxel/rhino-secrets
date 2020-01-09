@@ -5,6 +5,7 @@ A collection of cool stuff and lesser known facts on Rhino & Grasshopper you mig
 
 ## Rhino 🦏
 
+- [Good model practices & techniques](./model-practices.md)
 - [Troubleshooting Guide](./troubleshooting.md)
 
 
