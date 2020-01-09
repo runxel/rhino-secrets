@@ -185,6 +185,11 @@ Also have a look at this wonderful [PDF](/files/Data-Trees-by-Andrew-Heuman.pdf)
 
 ![Data trees explanation picture](/img/data_tree_expl.png)
 
+### Essential Algorithms and Data Structures
+… is the title of a new book by Rajaa Issa from McNeel. You can get a digital copy for free over [here](https://www.rhino3d.com/download/rhino/6.0/essential-algorithms)!
+
+![cover picture](/img/eads-book.png)
+
 ### Find a certain component
 If you see a component where you don't know from which tab it came from you can <kbd>ctrl</kbd> + <kbd>alt</kbd> left-click it. Grasshopper will happily show you the location:
 
