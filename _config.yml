@@ -1,3 +1,6 @@
+# Jekyll config for
+# https://github.com/runxel/rhino-secrets
+prettyname: Rhino Secrets 🦏
 theme: minima
 permalink: pretty
 plugins:

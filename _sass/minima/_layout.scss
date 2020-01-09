@@ -1,3 +1,18 @@
+nav {
+  background: #000000;
+  color: #eeeeee;
+  padding: 5px;
+  box-shadow: 5px 5px 0 0 $brand-color-lite;
+
+  a {
+    padding-left: 5px;
+    color: #eeeeee;
+
+    &:hover {
+      color: $brand-color-lite;
+    }
+  }
+}
 /*
  * Table of Contents
  */
@@ -239,6 +254,14 @@
 }
 header .post-title {
   display: none; /*changed-new*/
+}
+
+h1 #-rhino-secrets {
+  display: none;
+}
+
+h1 #-rhino-secrets + p {
+  text-align: center;
 }
 
 .post-list-heading {

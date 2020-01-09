@@ -1,9 +1,9 @@
 # [🦏 Rhino Secrets](https://runxel.github.io/rhino-secrets/)
-A collection of cool stuff and lesser known facts on Rhino you might or might not know.
+A collection of cool stuff and lesser known facts on Rhino & Grasshopper you might or might not know.
 
 <hr>
 
-## Rhino
+## Rhino 🦏
 
 - [Troubleshooting Guide](./troubleshooting.md)
 
@@ -172,7 +172,8 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 
 <hr>
 
-## Grasshopper 1.0
+
+## Grasshopper 1.0 🦗
 
 ### Understanding Data Trees
 The famous ['Data Trees Masterclass with David Rutten'](https://vimeo.com/channels/datatreegh) is highly recommended to watch.
