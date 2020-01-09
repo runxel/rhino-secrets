@@ -6,10 +6,13 @@ nav {
 
   a {
     padding-left: 5px;
-    color: #eeeeee;
-
+    
+    &,
+    &:visited {
+      color: #eeeeee !important;
+    }
     &:hover {
-      color: $brand-color-lite;
+      color: $brand-color-lite !important;
     }
   }
 }
@@ -256,11 +259,11 @@ header .post-title {
   display: none; /*changed-new*/
 }
 
-h1 #-rhino-secrets {
+h1#-rhino-secrets {
   display: none;
 }
 
-h1 #-rhino-secrets + p {
+h1#-rhino-secrets + p {
   text-align: center;
 }
 
