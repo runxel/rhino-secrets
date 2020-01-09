@@ -1,0 +1,8 @@
+<!-- These are notes for myself -->
+
+With [jekyll-relative-links](https://github.com/benbalter/jekyll-relative-links) enabled you can have relative links, and they also work in the `.md` GitHub preview.
+```
+[Link](./path/to/file.md)
+
+[Link to file in parent folder](../file.md)
+```
