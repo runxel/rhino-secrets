@@ -5,7 +5,7 @@ A collection of cool stuff and lesser known facts on Rhino you might or might no
 
 ## Rhino
 
-- [Troubleshooting Guide]({% link troubleshooting.md %})
+- [Troubleshooting Guide](./troubleshooting.md)
 
 
 ### Explain NURBS to me
