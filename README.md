@@ -5,6 +5,9 @@ A collection of cool stuff and lesser known facts on Rhino you might or might no
 
 ## Rhino
 
+- [Troubleshooting Guide]({% link troubleshooting.md %})
+
+
 ### Explain NURBS to me
 Go and see this wonderful explanation: [«Nurbs is just an acronym»](https://wordsandbuttons.online/nurbs_is_just_an_acronym.html)  
 ![nurbs explaination picture](/img/explain_nurbs.png)
@@ -30,6 +33,10 @@ With the object select go to your layers panel and click on the hammer icon, the
 ### Fast layer assign
 To change the layer of the selected object(s) click on the layer name in statusbar and choose another layer.  
 Since this pop-up is actually a full-fledged layer manager you can also set your current layer (when no object is selected), or hide/show and lock/unlock layers.
+
+### Disable a specific layer
+Often enough you want to disable a whole layer based on your selection. But going into a deeply nested layer tree is hard, so just use `_OneLayerOff`.  
+![Button picture](/img/onelayeroff.png)
 
 ### Different looking
 Take advantage of the possibility to assign a display mode to an object via `_SetObjectDisplayMode`.  
