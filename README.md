@@ -56,6 +56,10 @@ Long-press LMB on an object to drag and Rhino will find the closest snapping poi
 ### Fast angle snap
 Hover your mouse over a point during a command and press <kbd>Tab</kbd> to lock the current angle.
 
+### Snap to locked objects
+Sometimes you want to snap to locked objects, other times you don't.  
+Just go to `Tools > ObjectSnaps` and (un)check `snap to locked objects` – or type `SnapToLocked`. Tip: A good item to put on a custom button!
+
 ### Quick angles
 While using a drawing command like `_pline`, you can choose a relative angle to your point by typing in `<angle`. For example: `<35`
 
