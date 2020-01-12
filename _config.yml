@@ -2,6 +2,8 @@
 # https://github.com/runxel/rhino-secrets
 prettyname: Rhino Secrets 🦏
 theme: minima
+# https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
+baseurl: /rhino-secrets
 permalink: pretty
 plugins:
   - jekyll-sitemap
