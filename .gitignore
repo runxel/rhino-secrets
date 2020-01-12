@@ -1,3 +1,7 @@
+# .gitignore
+
+# editor related stuff
+.vscode/
 *.sublime-project
 *.sublime-workspace
 
