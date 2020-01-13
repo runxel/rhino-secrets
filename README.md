@@ -39,6 +39,9 @@ Since this pop-up is actually a full-fledged layer manager you can also set your
 Often enough you want to disable a whole layer based on your selection. But going into a deeply nested layer tree is hard, so just use `_OneLayerOff`.  
 ![Button picture](/img/onelayeroff.png)
 
+### Too many layers to handle?
+Try the [layer state manager](https://docs.mcneel.com/rhino/5/help/en-us/commands/layerstatemanager.htm). It will save you tons of time of hiding (and showing) certain layers.
+
 ### Different looking
 Take advantage of the possibility to assign a display mode to an object via `_SetObjectDisplayMode`.  
 ![Artic Viewport with transparent paraboloid picture](/img/set_obj_display_mode.png)
