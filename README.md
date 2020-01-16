@@ -112,6 +112,10 @@ _Join
 ### To Infinity...
 ... and beyond. Use `_IPlane` (alias `ip`) any time you need a plane – to trim with, intersect, Boolean operations, etc. You can even `_FilletSrf` to an IP!
 
+### Batch delete Blocks
+If you import files from other CADs you mostly end up with a lot of block definitions. If you try to delete layers you will get a pesky message that you have to delete those block definitions first, before you can delete the layer.  
+That's where the `Purge` [command](http://docs.mcneel.com/rhino/mac/help/en-us/index.htm#commands/purge.htm?Highlight=purge) comes in handy. You can delete all _unused_ block definitions, dimension annotation styles, groups, hatch patterns, layers, linetypes, and materials.
+
 ### Gumball galore
 Use <kbd>shift</kbd> + <kbd>ctrl</kbd> + <kbd>left click</kbd> to select the faces or edges of polysurfaces. You can then use the gumball to move/scale/rotate the selection.  
 
