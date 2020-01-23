@@ -1,12 +1,19 @@
-/**
- * Reset some basic elements
- */
+@charset "utf-8";
+
+::selection {
+  background: rgba(81,144,217,0.3);
+}
+
+/* Reset some basic elements */
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-
 }
 
 /**
@@ -137,6 +144,7 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
+  font-family: $base-font-family-mono;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;
