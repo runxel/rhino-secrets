@@ -30,8 +30,8 @@ Ever wondered what the specials chars in commands meant? Or are you always forge
 
 
 ### Find layer
-Every so often you are in need of finding the layer the object is in – in the layer tree. Of course we can see the layer name of the selected object in the statusbar, but when working with many (and possibly similar named) layers this information alone is sometimes not enough.  
-With the object select go to your layers panel and click on the hammer icon, then choose "Select Object Layer". Rhino will unfold the layer structure for you and and highlight the right layer.
+Every so often you are in need of finding the layer the object is in – i.e. it's precise location in the layer tree. Of course we can see the layer name of the selected object in the statusbar, but when working with many (and possibly similar named) layers this information alone is sometimes not enough.  
+With the wanted object selected go to your layers panel and click on the hammer icon, then choose "Select Object Layer". Rhino will unfold the layer structure for you and and highlight the right layer.
 
 
 ### Fast layer assign
