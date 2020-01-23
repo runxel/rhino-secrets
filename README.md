@@ -87,7 +87,7 @@ When drawing a polyline <kbd>ctrl</kbd> + <kbd>click</kbd> on your previous poin
 Everybody knows <kbd>shift</kbd> for constraining objects orthogonally on plane; use <kbd>shift</kbd> + <kbd>ctrl</kbd> and you can lock it vertically.
 
 
-### Distance
+### Distance constraint
 When prompted for a second point you can also just type in a distance and enter. That constrains the distance from the first point. Then click on something in the correct direction and you're done!
 
 
