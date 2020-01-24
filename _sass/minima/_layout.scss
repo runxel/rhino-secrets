@@ -19,15 +19,15 @@ nav {
 /*
  * Table of Contents
  */
-.my_toc {
+.toc {
   text-align: center;
 }
-.my_toc::before {
+.toc::before {
   content: "Go to:";
   display: block;
   text-align: center;
 }
-.my_toc li {
+.toc li {
   border: 2px solid $brand-color;
   width: 50%;
   padding: 5px;

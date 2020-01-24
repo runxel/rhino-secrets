@@ -12,10 +12,11 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #e74c3c; /*changed*/
-$brand-color-lite: #f3a59d;
+$text-color:          #111 !default;
+$background-color:    #fdfdfd !default;
+$background-color-compl: darken($background-color, 10%) !default;
+$brand-color:         hsl(6, 78%, 57%);
+$brand-color-lite:    #f3a59d;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -31,6 +32,13 @@ $on-laptop:        800px !default;
 
 $on-medium:        $on-palm !default;
 $on-large:         $on-laptop !default;
+
+@media ( prefers-color-scheme: dark) {
+  // now we set the colors for the dark color scheme
+  $text-color:          #fdfdfd;
+  $background-color:    #111;
+  $background-color-compl: lighten($background-color, 10%); /* e.g. used for the scrollbar grip */
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
