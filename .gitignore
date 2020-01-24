@@ -10,3 +10,6 @@ collection.md
 
 # large binaries
 *.psd
+
+# icons I don't currently need
+img/icons/gh/unused/

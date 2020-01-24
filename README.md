@@ -254,6 +254,7 @@ If you see a component where you don't know from which tab it came from you can 
 ![Where is the component? picture](/img/where-component.png)
 
 
+
 ### Pop Up Shortcuts
 The double click popup window for inserting components accepts a number of different input formats. If you provide a plain component name (or the abbreviation or a word used in the description) then you will see a list of potential matches, sorted from most relevant to least relevant:  
 ![pop up sorting picture](/img/pop-up-1.png)
@@ -263,28 +264,28 @@ Some components and objects support initialisation codes, which means you can as
 
 | Special popup formats | Explanation |
 |          ---          |     ---     |
-| `"…`                  | If the format starts with a double quote, then the entire contents (minus any other double quotes) will be placed into a Text Panel. |
-| `//…`                 | Two forward slashes also generats a Text Panel. |
+| `"…`                  | If the format starts with a double quote, then the entire contents (minus any other double quotes) will be placed into a \[Text Panel\] ![](img/icons/gh/param/Panel.png). |
+| `//…`                 | Two forward slashes also generats a \[Text Panel\] ![](img/icons/gh/param/Panel.png). |
 | `~…`                  | If the format starts with a tilde, then the entire contents will be placed in a Scribble object. |
-| `d,d[,d]`             | If the format contains two or three numerics separated by commas, a Point parameter will be created with the specified coordinates. |
-| `+[d]`                | Plus creates an Addition compononent. |
-| `-[d]`                | Minus creates a Subtraction component. |
-| `*[d]`                | Asterisk creates a Multiplication component. |
-| `/[d]`                | One forward slash creates a Division component. |
-| `\[d]`                | A backward slash will create an Integer Division component. |
-| `%[d]`                | The percent symbol creates a Modulus component. |
-| `&…`                  | The ampersand creates a Concatenation component. |
-| `=…`                  | The equals symbol creates an Equality component. |
-| `<`                   | Creates a Smaller Than component. |
-| `>`                   | Creates a Larger Than component. |
-| `[d *] Pi`            | If the format contains the text "Pi" with an optional multiplication factor, then a Pi component will be created. |
-| `d`                   | If the format can be evaluated as a single numeric value, then a Slider will be created with the specified initial value and sensible™ lower and upper limits. |
-| `d<d` or `d..d`       | Two numerics separated by a smaller than symbol or by two or more consecutive dots will create a Slider with the specified limits. The initial slider value will be equal to the lower limit. |
-| `d<d<d` or `d..d..d`  | Three numerics separated by a smaller than symbol or by two or more consecutive dots will create a Slider with the specified limits. The initial slider value will be the value in the middle.|
-| `d/d/[d]`             | Two or three numerics separated by forward slashes will create a Calendar object. The order of value is *day/month/year*. If year is omitted then the current year is used. Note that a second slash is required because `#/#` is interpreted as a number and thus results in a Slider. |
-| `#:#[:#] [am/pm]`     | If the format contains at least two numerics separated by a colon, a Clock object is created. Seconds are optional, as are am/pm suffixes. |
-| `f([…[,…[,…]]]) [= *]` | If the format starts with a lower case _f_ followed by an opening bracket, an Expression component is created. A list of comma separated arguments can be provided as inputs, and anything after the optional equals symbol becomes the expression string. Example: `f(x, y) = x^2 + sin(y)` | 
-| `#…`                  | A hash infront will yield old components. |
+| `d,d[,d]`             | If the format contains two or three numerics separated by commas, a \[Point\] ![](img/icons/gh/param/Point.png) parameter will be created with the specified coordinates. |
+| `+[d]`                | Plus creates an \[Addition\] ![](img/icons/gh/math/Addition.png) compononent. |
+| `-[d]`                | Minus creates a \[Subtraction\] ![](img/icons/gh/math/Subtraction.png) component. |
+| `*[d]`                | Asterisk creates a \[Multiplication\] ![](img/icons/gh/math/Multiplication.png) component. |
+| `/[d]`                | One forward slash creates a \[Division\] ![](img/icons/gh/math/Division.png) component. |
+| `\[d]`                | A backward slash will create an \[Integer Division\] ![](img/icons/gh/math/Integer_Division.png) component. |
+| `%[d]`                | The percent symbol creates a \[Modulus\] ![](img/icons/gh/math/Modulus.png) component. |
+| `&…`                  | The ampersand creates a \[Concatenation\] ![](img/icons/gh/sets/Concatenate.png) component. |
+| `=…`                  | The equals symbol creates an \[Equality\] ![](img/icons/gh/math/Equality.png) component. |
+| `<`                   | Creates a \[Smaller Than\] ![](img/icons/gh/math/Smaller_Than.png) component. |
+| `>`                   | Creates a \[Larger Than\] ![](img/icons/gh/math/Larger_Than.png) component. |
+| `[d *] Pi`            | If the format contains the text "Pi" with an optional multiplication factor, then a \[Pi\] ![](img/icons/gh/math/Pi.png) component will be created. |
+| `d`                   | If the format can be evaluated as a single numeric value, then a \[Slider\] ![](img/icons/gh/param/Number_Slider.png) will be created with the specified initial value and sensible™ lower and upper limits. |
+| `d<d` or `d..d`       | Two numerics separated by a smaller than symbol or by two or more consecutive dots will create a \[Slider\] ![](img/icons/gh/param/Number_Slider.png) with the specified limits. The initial slider value will be equal to the lower limit. |
+| `d<d<d` or `d..d..d`  | Three numerics separated by a smaller than symbol or by two or more consecutive dots will create a \[Slider\] ![](img/icons/gh/param/Number_Slider.png) with the specified limits. The initial slider value will be the value in the middle.|
+| `d/d/[d]`             | Two or three numerics separated by forward slashes will create a \[Calendar\] ![](img/icons/gh/param/Clock.png) object. The order of value is *day/month/year*. If year is omitted then the current year is used. Note that a second slash is required because `#/#` is interpreted as a number and thus results in a Slider. |
+| `#:#[:#] [am/pm]`     | If the format contains at least two numerics separated by a colon, a \[Clock\] ![](img/icons/gh/param/Calendar.png) object is created. Seconds are optional, as are am/pm suffixes. |
+| `f([…[,…[,…]]]) [= *]` | If the format starts with a lower case _f_ followed by an opening bracket, an \[Expression\] ![](img/icons/gh/math/Expression.png) component is created. A list of comma separated arguments can be provided as inputs, and anything after the optional equals symbol becomes the expression string. <br> Example: `f(x, y) = x^2 + sin(y)` | 
+| `#…`                  | A hash infront will yield old (legacy) components. |
 
 Note that decimal places will be harvested from formats that indicate sliders. I.e. the format `0..2..10` is not the same as `0..2..10.00`, as the former will create an integer slider from zero to ten whereas the latter will create a floating point slider with two decimal places from zero to ten.
 
@@ -324,7 +325,7 @@ The notation for the filter is Regex-style and case sensitive. A double colon `:
 
 
 ### Data Tree Selection Rules
-The following rules will work with the \[Path Compare\] <img src="img/icons/Path_Compare.png" alt="Path Compare icon">, \[Split Tree\] <img src="img/icons/Split_Tree.png" alt="Split Tree icon"> and \[Replace Paths\] <img src="img/icons/Replace_Paths.png" alt="Replace Paths icon"> components.  
+The following rules will work with the \[Path Compare\] <img src="img/icons/gh/sets/Path_Compare.png" alt="Path Compare icon">, \[Split Tree\] <img src="img/icons/gh/sets/Split_Tree.png" alt="Split Tree icon"> and \[Replace Paths\] <img src="img/icons/gh/sets/Replace_Paths.png" alt="Replace Paths icon"> components.  
 
 Imagine we have the following data tree, containing a bunch of textual characters:  
 ```
@@ -359,7 +360,7 @@ Basically, rules work in a very consistent way, but there are some syntax conven
 ```
 {A;B;C;...;Z}[i]              where A, B, C, Z and i represent rules.
 ```
-All in all it's very similar to the Path Mapper syntax.
+All in all it's very similar to the \[Path Mapper\] ![](img/icons/gh/sets/Replace_Paths.png) syntax.
 
 
 | Rule Notations | Explanation |
