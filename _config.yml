@@ -11,4 +11,15 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-  
+
+# seo
+#tagline: A short overview on the secrets of Rhino 3D.
+twitter:
+  username: _runxel
+  card: summary
+social:
+  name: Lucas Becker
+  links:
+    - https://twitter.com/_runxel
+    - https://github.com/runxel
+logo: /assets/img/og_img.png
