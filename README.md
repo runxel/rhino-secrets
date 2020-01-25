@@ -230,6 +230,8 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 
 - [Grasshopper components help](https://rhino.github.io/)  
   Every standard component and also many plug-ins are explained here.
+- [Grasshopper FAQ](https://www.grasshopper3d.com/forum/categories/faq-frequent-questions/listForCategory?categoryId=2985220%3ACategory%3A598480&page=1)  
+  The FAQ on the old Grasshopper forum.
 
 
 ### Understanding Data Trees
@@ -245,22 +247,28 @@ Also have a look at this wonderful [PDF](/files/Data-Trees-by-Andrew-Heuman.pdf)
 ### Essential Algorithms and Data Structures
 … is the title of a new book by Rajaa Issa from McNeel. You can get a digital copy for free over [here](https://www.rhino3d.com/download/rhino/6.0/essential-algorithms)!
 
-![cover picture](/img/eads-book.png)
+![cover picture](/img/gh1/eads-book.png)
 
 
 ### Find a certain component
 If you see a component where you don't know from which tab it came from you can <kbd>ctrl</kbd> + <kbd>alt</kbd> left-click it. Grasshopper will happily show you the location:
 
-![Where is the component? picture](/img/where-component.png)
+![Where is the component? picture](/img/gh1/where-component.png)
+
+
+### I/O Modifier
+A short [recap](gh1-iomodifier.md) of the possible input and output modifier in a Grasshopper component.
+
+![I/O modifier picture](/img/gh1/iomods.png)
 
 
 
 ### Pop Up Shortcuts
 The double click popup window for inserting components accepts a number of different input formats. If you provide a plain component name (or the abbreviation or a word used in the description) then you will see a list of potential matches, sorted from most relevant to least relevant:  
-![pop up sorting picture](/img/pop-up-1.png)
+![pop up sorting picture](/img/gh1/pop-up-1.png)
 
 Some components and objects support initialisation codes, which means you can assign certain values directly from the popup box. You can do this by adding an equals symbol after the name and then the value you wish to assign. For example, the \[Curve Offset\] component allows you to specify the offset distance via the popup box by typing `=5` after the offset command:  
-![pop up init picture](/img/pop-up-2.png)
+![pop up init picture](/img/gh1/pop-up-2.png)
 
 | Special popup formats | Explanation |
 |          ---          |     ---     |
@@ -293,7 +301,7 @@ Note that decimal places will be harvested from formats that indicate sliders. I
 ### Panel Special Codes
 When enabled in the right-click menu of a panel, special character combinations in curly braces will be replaced by other characters.
 
-![panel special codes picture](/img/panel-special-codes.png)
+![panel special codes picture](/img/gh1/panel-special-codes.png)
 
    
 | Examples | Look when option enabled |
@@ -321,11 +329,11 @@ The notation for the filter is Regex-style and case sensitive. A double colon `:
 | `[chars]` | Any character from inside the brackets |
 | `[!chars]` | Any character _except_ from inside the brackets |
 
-![geo pipeline picture](/img/geo_pipeline.png)
+![geo pipeline picture](/img/gh1/geo_pipeline.png)
 
 
 ### Data Tree Selection Rules
-The following rules will work with the \[Path Compare\] <img src="img/icons/gh/sets/Path_Compare.png" alt="Path Compare icon">, \[Split Tree\] <img src="img/icons/gh/sets/Split_Tree.png" alt="Split Tree icon"> and \[Replace Paths\] <img src="img/icons/gh/sets/Replace_Paths.png" alt="Replace Paths icon"> components.  
+The following rules will work with the \[Path Compare\] ![](img/icons/gh/sets/Path_Compare.png), \[Split Tree\] ![](img/icons/gh/sets/Split_Tree.png) and \[Replace Paths\] ![](img/icons/gh/sets/Replace_Paths.png) components.  
 
 Imagine we have the following data tree, containing a bunch of textual characters:  
 ```
@@ -401,12 +409,12 @@ If you need to plug in one wire into multiple components you can do so by _right
 You probably already asked yourself what the red wire does in Grasshopper when you accidentally pressed <kbd>Alt</kbd> on your keyboard while wiring components.  
 The answer: it names relays and also other inputs!  
 _(Note: at least for me the behaviour is bugged and you need to do this twice, bevor the name gets auto propagated.)_  
-![red wiring picture](/img/red_wiring.png)
+![red wiring picture](/img/gh1/red_wiring.png)
 
 
 ### Code in your editor of choice – Run in Grasshopper
 Right click into the GhPython component and choose "Show 'code' input parameter". Now using a "File path" primitive and the "Read File" component we can feed the python component with some external source code.  
-![code feed into python picture](/img/code_feed_python.png)
+![code feed into python picture](/img/gh1/code_feed_python.png)
 
 If you want to have autocomplete in your editor, you should have a look at the awesome ["Ironstubs"](https://github.com/gtalarico/ironpython-stubs). It's usable in Atom, Sublime Text, Vim and Visual Studio Code.  
 ![sublime-large-demo](https://raw.githubusercontent.com/gtalarico/ironpython-stubs/master/docs/sublime/sublime-demo-large.gif)
@@ -415,7 +423,7 @@ If you want to have autocomplete in your editor, you should have a look at the a
 ### Have IO descriptors in python
 [Sample file](/files/inputDescription.gh)  
 
-![io picture](/img/python_io_descr.png)
+![io picture](/img/gh1/python_io_descr.png)
 
 
 ### Python to native GH component
