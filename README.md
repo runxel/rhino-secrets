@@ -267,7 +267,7 @@ A short [recap](gh1-iomodifier.md) of the possible input and output modifier in 
 The double click popup window for inserting components accepts a number of different input formats. If you provide a plain component name (or the abbreviation or a word used in the description) then you will see a list of potential matches, sorted from most relevant to least relevant:  
 ![pop up sorting picture](/img/gh1/pop-up-1.png)
 
-Some components and objects support initialisation codes, which means you can assign certain values directly from the popup box. You can do this by adding an equals symbol after the name and then the value you wish to assign. For example, the \[Curve Offset\] component allows you to specify the offset distance via the popup box by typing `=5` after the offset command:  
+Some components and objects support initialisation codes, which means you can assign certain values directly from the popup box. You can do this by adding an equals symbol after the name and then the value you wish to assign. For example, the \[Curve Offset\] ![](/img/icons/gh/crv/Offset_Curve.png) component allows you to specify the offset distance via the popup box by typing `=5` after the offset command:  
 ![pop up init picture](/img/gh1/pop-up-2.png)
 
 | Special popup formats | Explanation |
