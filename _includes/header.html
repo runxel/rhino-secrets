@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google-site-verification" content="n8kLjQ63XEDTqJ-1CD32tz66WLphSNW-Ym1BKkk4Nd0" />
+    {%- seo -%}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Chivo:400,400i,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- (%- include header.html -%) -->
+
+    <nav><a href="{{ site.baseurl }}">{{ site.prettyname }}</a></nav>
+    <main class="page-content" aria-label="Content">

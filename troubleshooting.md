@@ -1,3 +1,7 @@
+---
+layout: single
+---
+
 # Troubleshooting Guide
 
 ### Bloated Files

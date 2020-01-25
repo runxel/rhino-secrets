@@ -1,4 +1,5 @@
 ---
+layout: single
 source: https://www.grasshopper3d.com/forum/topics/what-are-the-icons-on-a-component-s-input-output-parameter
 ---
 

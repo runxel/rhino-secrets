@@ -1,52 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="google-site-verification" content="n8kLjQ63XEDTqJ-1CD32tz66WLphSNW-Ym1BKkk4Nd0" />
-		{%- seo -%}
-		<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Chivo:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap&subset=latin-ext" rel="stylesheet">
-	</head>
-
-	<body>
-
-		<!-- (%- include header.html -%) -->
-
-		<nav><a href="{{ site.baseurl }}">{{ site.prettyname }}</a></nav>
-		<main class="page-content" aria-label="Content">
-			<div class="wrapper">
-				<!-- surely we want a ToC -->
-				<!-- https://github.com/allejo/jekyll-toc -->
-				{% include toc.html html=content h_min=2 h_max=2 class="toc" %}
-				
-				<!-- instead of (( content ))  [cant use curly brackets bc jekyll ignores that its in a comment] -->
-				<!-- we use a liquid tag -->
-				<!-- so we can enjoy js-free anchors in jekyll -->
-				<!-- https://github.com/allejo/jekyll-anchor-headings -->
-				{% include anchor_headings.html html=content anchorBody="#" beforeHeading=true %}
-			</div>
-		</main>
-
-		<footer class="site-footer h-card">
-			<div class="wrapper">
-				<div class="footer-col-wrapper">
-					{% if site.github.is_project_page %}
-						<a href="{{ site.github.repository_url }}">View on GitHub</a>
-					{% endif %}
-					<br>
-					Made with <span class="heart">♥</span> by <a href="https://lucasbecker.de">Lucas Becker</a>
-					<br>
-					<span class="mirror-v">©</span> {{ 'now' | date: "%Y" }}
-				</div>
-			</div>
-		</footer>
-
-	</body>
-
-</html>
+{% include header.html %}
+	<div class="wrapper">
+		<!-- surely we want a ToC -->
+		<!-- https://github.com/allejo/jekyll-toc -->
+		{% include toc.html html=content h_min=2 h_max=2 class="toc" %}
+		
+		<!-- instead of (( content ))  [cant use curly brackets bc jekyll ignores that its in a comment] -->
+		<!-- we use a liquid tag -->
+		<!-- so we can enjoy js-free anchors in jekyll -->
+		<!-- https://github.com/allejo/jekyll-anchor-headings -->
+		{% include anchor_headings.html html=content anchorBody="#" beforeHeading=true %}
+	</div>
+{% include footer.html %}
