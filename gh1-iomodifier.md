@@ -48,7 +48,7 @@ The Principal input modifier is possibly the most obscure in this set. An input 
 The Reparameterize input modifier will only work on lines, curves and surfaces forcing the domains of all geometry to the `[0.0 to 1.0]` range.
 
 ### Reverse
-The Reverse I/O modifier will reverse the order of a list (or lists in a multiple path structure), similiar to the \[Reverse List\] ![](/icons/gh/sets/ListReverse.png).
+The Reverse I/O modifier will reverse the order of a list (or lists in a multiple path structure), similiar to the \[Reverse List\] ![](/img/icons/gh/sets/ListReverse.png).
 
 ### Simplify
 The Simplify I/O modifier will remove the overlap shared amongst all branches, like \[Simplify Tree\] ![](/img/icons/gh/sets/Simplify_Tree.png) (_Note that a single branch does not share any overlap with anything else._)  
