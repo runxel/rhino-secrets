@@ -239,9 +239,9 @@ The famous ['Data Trees Masterclass with David Rutten'](https://vimeo.com/channe
 
 Also have a look at this wonderful [PDF](/files/Data-Trees-by-Andrew-Heuman.pdf) made by Andrew Heumann from which the following figures were taken:
 
-![Data trees architectural explanation picture](/img/data_trees_expl_arch.png)
+![Data trees architectural explanation picture](/img/gh1/data_trees_expl_arch.png)
 
-![Data trees explanation picture](/img/data_tree_expl.png)
+![Data trees explanation picture](/img/gh1/data_tree_expl.png)
 
 
 ### Essential Algorithms and Data Structures
