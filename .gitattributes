@@ -1,4 +1,9 @@
+
+# exlude from statistics
 _includes/* linguist-vendored
-_layouts/* linguist-vendored
-_sass/* linguist-vendored
-assets/* linguist-vendored
+_layouts/*  linguist-vendored
+_sass/*     linguist-vendored
+assets/*    linguist-vendored
+
+# SVGs are treated as binary by default
+*.svg       text
