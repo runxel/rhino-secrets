@@ -29,17 +29,16 @@ nav {
   }
 
   li {
-    font: $base-font-family-mono;
+    font-family: $base-font-family-mono;
     cursor: pointer;
     position: relative;
     min-width: max-content;
-    margin: 3em 0;
+    margin: 1.5em 0;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     line-height: 1;
-    font-weight: 500;
-    font-size: .7rem;
+    font-size: 1.5rem;
     letter-spacing: .02em;
 
     &::before,

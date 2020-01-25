@@ -84,7 +84,7 @@ h2 + ul {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font: $base-font-family-mono;
+  font-family: $base-font-family-mono;
   font-weight: $base-font-weight + 200;
   margin-top: $spacing-unit;
 }
@@ -162,9 +162,10 @@ a {
   &[href*="//"]:not([href*="runxel.github.io"])::after {
     content: "↗";
   }
-  &[href$=".gh"]::after {
-    content: url(/img/icons/gh/gh_file.svg);
-  }
+  // sadly doesn't work :(
+  // &[href$=".gh"]::after {
+  //   content: url(/img/icons/gh/gh_file.svg);
+  // }
 }
 
 
