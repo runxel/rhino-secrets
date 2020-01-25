@@ -1,28 +1,22 @@
 @charset "utf-8";
 
 ::selection {
-  background: rgba(81,144,217,0.3);
+  background: rgba($brand-color, 0.3);
 }
 
-/* Reset some basic elements */
+/* Reset basic elements */
 *, ::before, ::after {
   box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
 }
 
-/**
- * Basic styling
- */
+/* Basic styling */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
+  box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -35,32 +29,32 @@ body {
   scrollbar-color: $background-color-compl $background-color;
 }
 
+p {
+  line-height: 1.6em;
+}
+
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 3; /*changed*/
+  margin-bottom: $spacing-unit / 3;
 }
 
-/**
- * `main` element
- */
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  display: block;
 }
 
-/**
- * Images
- */
+/* Images */
 img {
   max-width: 100%;
   vertical-align: middle;
   margin: 5px 0 5px 0;
+  @include box-shadow;
+  @include border-radius;
 }
 
-/**
- * Figures
- */
+/* Figures */
 figure > img {
   display: block;
 }
@@ -69,10 +63,8 @@ figcaption {
   font-size: $small-font-size;
 }
 
-/**
- * Lists
- */
-ul, ol {
+/*Lists */
+ul, ol { 
   // margin-left: $spacing-unit;
 }
 
@@ -83,20 +75,79 @@ li {
   }
 }
 
-/**
- * Headings
- */
+h2 + ul {
+  width: 100%;
+  margin: 2em 0 1em;
+  padding-left: 1em;
+  list-style-position: inside;
+}
+
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight + 200;  /*changed*/
+  font: $base-font-family-mono;
+  font-weight: $base-font-weight + 200;
   margin-top: $spacing-unit;
 }
 
-/**
- * Links
- */
+h2 {
+  $shadow-col: #000000;
+  font-size: 3em;
+  position: relative;
+  right: 65px;
+  /* Will override color (regardless of order) */
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: $shadow-col;
+  text-shadow: 
+    1px 1px 0px $shadow-col,
+    2px 2px 0px $shadow-col,
+    3px 3px 0px $shadow-col,
+    4px 4px 0px $shadow-col,
+    5px 5px 0px $shadow-col,
+    6px 6px 0px $shadow-col,
+    7px 7px 0px $shadow-col,
+    8px 8px 0px $shadow-col;
+
+  a {
+    @include transition;
+    
+    &:hover {
+      -webkit-text-fill-color: $brand-color;
+      text-decoration: none;
+      @include transition;
+    }
+  }
+}
+
+h3, h4 {
+  font-size: 1.5em;
+  letter-spacing: -0.05em;
+}
+
+h3 {
+  position: relative;
+  right: 28px;
+  padding-top: 1em;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    top: 0.8em;
+    left: -0.5em;
+    border-top: 1.2px solid $brand-color;
+    border-left: 1.2px solid $brand-color;
+    padding-bottom: 10px;
+  }
+}
+
+/* Links */
 a {
   color: $brand-color;
   text-decoration: none;
+  @include transition;
 
   &:visited {
     color: $brand-color;
@@ -105,25 +156,19 @@ a {
   &:hover {
     color: $text-color;
     text-decoration: underline;
+    @include transition;
   }
   
   &[href*="//"]:not([href*="runxel.github.io"])::after {
     content: "↗";
   }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
+  &[href$=".gh"]::after {
+    content: url(/img/icons/gh/gh_file.svg);
   }
 }
 
 
-/**
- * Blockquotes
- */
+/* Blockquotes */
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
@@ -137,18 +182,18 @@ blockquote {
   }
 }
 
-
-
-/**
- * Code formatting
- */
+/* Code formatting */
 pre,
 code {
   @include relative-font-size(0.9375);
   font-family: $base-font-family-mono;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: rgb(216, 240, 227);
+  font-size: 90%;
+  box-shadow:
+    1px 1px 0 #959da55c,
+    inset 0.5px 0.5px 0 0.5px #ffffffa1;
 }
 
 code {
@@ -184,10 +229,7 @@ kbd {
 }
 
 
-
-/**
- * Wrapper
- */
+/* Wrapper */
 .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
   max-width:         calc(#{$content-width} - (#{$spacing-unit}));
@@ -205,23 +247,14 @@ kbd {
   }
 }
 
-
-
-/**
- * Clearfix
- */
+/* Clearfix */
 %clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
-
-/**
- * Icons
- */
-
+/* Icons */
 .orange {
   color: $orange-color;
 }
@@ -239,10 +272,7 @@ kbd {
   vertical-align: text-bottom;
 }
 
-
-/**
- * Tables
- */
+/* Tables */
 table {
   margin-bottom: $spacing-unit;
   width: 100%;
@@ -250,6 +280,8 @@ table {
   color: lighten($text-color, 18%);
   border-collapse: collapse;
   border: 1px solid $grey-color-light;
+  @include box-shadow;
+
   tr {
     &:nth-child(even) {
       background-color: lighten($grey-color-light, 6%);

@@ -3,7 +3,7 @@
 // Define defaults for each variable.
 
 //$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$base-font-family: 'Chivo', -apple-system, "Segoe UI", sans-serif !default;
+$base-font-family:      'Chivo', -apple-system, "Segoe UI", sans-serif !default;
 $base-font-family-mono: 'Space Mono', monospace !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
@@ -12,19 +12,36 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
+// lt => LIGHT THEME --------------------------
 $text-color:          #111 !default;
-$background-color:    #fdfdfd !default;
+$background-color:    #efefef !default;
 $background-color-compl: darken($background-color, 10%) !default;
-$brand-color:         hsl(6, 78%, 57%);
+$brand-color:         #e74d3c;
 $brand-color-lite:    #f3a59d;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 $orange-color:     #f66a0a !default;
-$table-text-align: left !default;
 
-// Width of the content area
+
+// dt => DARK THEME --------------------------
+// (if I ever add support)
+$text-color-dt:          #fdfdfd !default;
+$background-color-dt:    #111 !default;
+$background-color-compl-dt: lighten($background-color, 10%) !default; // e.g. used for the scrollbar grip
+@mixin dark-mode {
+  @media screen and ( prefers-color-scheme: dark) {
+    @content;
+  }
+}
+// use it like
+// @include dark-mode {
+  //    color: text-color-dt; }
+  
+  $table-text-align: left !default;
+  
+  // Width of the content area
 $content-width:    800px !default;
 
 $on-palm:          600px !default;
@@ -33,13 +50,8 @@ $on-laptop:        800px !default;
 $on-medium:        $on-palm !default;
 $on-large:         $on-laptop !default;
 
-@media ( prefers-color-scheme: dark) {
-  // now we set the colors for the dark color scheme
-  $text-color:          #fdfdfd;
-  $background-color:    #111;
-  $background-color-compl: lighten($background-color, 10%); /* e.g. used for the scrollbar grip */
-}
 
+// MIXINS --------------------------
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
@@ -59,7 +71,27 @@ $on-large:         $on-laptop !default;
   font-size: $base-font-size * $ratio;
 }
 
-// Import partials.
+@mixin transition($time: 0.5s, $what: all) {
+  transition: $time $what ease-in-out;
+}
+
+@mixin border-radius($radius: 7px) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow {
+  box-shadow:
+    0 0.7px 2.4px -16px rgba(0, 0, 0, 0.001),
+    0 1.7px 5.4px -16px rgba(0, 0, 0, 0.003),
+    0 3px 9.3px -16px rgba(0, 0, 0, 0.005),
+    0 5px 15px -16px rgba(0, 0, 0, 0.008),
+    0 8.2px 24px -16px rgba(0, 0, 0, 0.013),
+    0 14.3px 40.5px -16px rgba(0, 0, 0, 0.019),
+    0 31px 84px -16px rgba(0, 0, 0, 0.03)
+  ;
+}
+
+// Import partials
 @import
   "minima/base",
   "minima/layout",
