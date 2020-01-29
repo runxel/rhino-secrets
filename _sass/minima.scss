@@ -37,11 +37,11 @@ $background-color-compl-dt: lighten($background-color, 10%) !default; // e.g. us
 }
 // use it like
 // @include dark-mode {
-  //    color: text-color-dt; }
-  
-  $table-text-align: left !default;
-  
-  // Width of the content area
+//    color: text-color-dt; }
+
+$table-text-align: left !default;
+
+// Width of the content area
 $content-width:    800px !default;
 
 $on-palm:          600px !default;
