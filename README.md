@@ -232,6 +232,7 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
   Every standard component and also many plug-ins are explained here.
 - [Grasshopper FAQ](https://www.grasshopper3d.com/forum/categories/faq-frequent-questions/listForCategory?categoryId=2985220%3ACategory%3A598480&page=1)  
   The FAQ on the old Grasshopper forum.
+- Have a look at some of my custom made [GH-userobjects](https://github.com/runxel/gh-userobjects), which I use in production.
 
 
 ### Understanding Data Trees
@@ -261,6 +262,9 @@ A short [recap](gh1-iomodifier.md) of the possible input and output modifier in 
 
 ![I/O modifier picture](/img/gh1/iomods.png)
 
+
+### Load GH definition with Rhino doc
+Often enough you have a Rhino document with an "associated" Grasshopper definition, and switching between multiple files can be tiresome. With this [script](https://github.com/runxel/rhino-scripts#autoloadgrasshopperdefpy) you have a hassle-free working experience: it will load the Grasshopper definition automagically when you open a Rhino file.
 
 
 ### Pop Up Shortcuts
