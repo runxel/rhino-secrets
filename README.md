@@ -29,6 +29,15 @@ Ever wondered what the specials chars in commands meant? Or are you always forge
 | `;`  | Comment. (used in macros) |
 
 
+### Tolerances
+What are they? How are they important? Do _I_ have to do anything?  
+All those questions are perfectly answered in the [McNeel Wiki](https://wiki.mcneel.com/rhino/faqtolerances).
+
+Rule of thumb:  
+Use a tolerance setting one order of magnitude tighter than (1/10 of) your smallest modeled detail.  
+In general keep the absolute tolerance setting in the range of `0.01` to `0.0001`. Never set it below `1.0e-5` – chrashes might occur and you pay with slow computing speed. If you need a tighter tolerance, use smaller units instead.
+
+
 ### Find layer
 Every so often you are in need of finding the layer the object is in – i.e. it's precise location in the layer tree. Of course we can see the layer name of the selected object in the statusbar, but when working with many (and possibly similar named) layers this information alone is sometimes not enough.  
 With the wanted object selected go to your layers panel and click on the hammer icon, then choose "Select Object Layer". Rhino will unfold the layer structure for you and and highlight the right layer.
