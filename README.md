@@ -313,7 +313,7 @@ Note that decimal places will be harvested from formats that indicate sliders. I
 
 
 ### Panel Special Codes
-When enabled in the right-click menu of a panel, special character combinations in curly braces will be replaced by other characters.
+When enabled in the right-click menu of a panel, special character combinations in curly braces will be replaced by other characters. (_Note: 'Multiline Data' must be off.)
 
 ![panel special codes picture](/img/gh1/panel-special-codes.png)
 
