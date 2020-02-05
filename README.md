@@ -241,6 +241,7 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
   Every standard component and also many plug-ins are explained here.
 - [Grasshopper FAQ](https://www.grasshopper3d.com/forum/categories/faq-frequent-questions/listForCategory?categoryId=2985220%3ACategory%3A598480&page=1)  
   The FAQ on the old Grasshopper forum.
+- [ModeLab's Grasshopper Primer](https://aae280.files.wordpress.com/2014/10/mode-lab-grasshopper-primer-third-edition.pdf) might be the best comprehensive material  for beginners and experts alike.
 - Have a look at some of my custom made [GH-userobjects](https://github.com/runxel/gh-userobjects), which I use in production.
 
 
