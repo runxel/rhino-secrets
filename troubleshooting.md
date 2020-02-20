@@ -4,6 +4,17 @@ layout: single
 
 # Troubleshooting Guide
 
+### Nothing to revert?
+After some time working in Rhino the undo command might suddenly break. The command line will happily tell you: `Nothing to revert.` – Even tho there _certainly is_ something to be undone.  
+The solution here is kinda two-fold:
+Check your settings in `General > Undo`, the undo memory might be to low to hold the operations you did previously.  
+![undo memory settings image](img/undo-memory.png)  
+
+If those operations were quite heavy (e.g. Boolean operations between complicated objects) the memory might already overflowed; Rhino will say "Nothing to revert".
+
+Another option to deal with this behaviour is to use the **Incremental Save** command. It's like `SaveAs` except it automatically names the file – but unlike `SaveAs`, it leaves you in your current file. If you ever change your mind you can easily go back to an earlier state of your file.
+
+
 ### Bloated Files
 The [McNeel wiki](https://wiki.mcneel.com/rhino/checkreducefilesize) has a good list about all the possibilities why your file might end up being huge (not only, but especially):
 
