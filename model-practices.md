@@ -2,7 +2,7 @@
 layout: single
 ---
 
-# Good model practices & techniques
+## Good model practices & techniques
 
 Surfacing _is_ hard! So don't worry if the first result is not 100% there where you want it.
 

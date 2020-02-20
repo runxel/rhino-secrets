@@ -2,7 +2,7 @@
 layout: single
 ---
 
-# Troubleshooting Guide
+## Troubleshooting Guide
 
 ### Nothing to revert?
 After some time working in Rhino the undo command might suddenly break. The command line will happily tell you: `Nothing to revert.` – Even tho there _certainly is_ something to be undone.  
