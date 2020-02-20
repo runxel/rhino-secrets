@@ -26,7 +26,7 @@ The I/O modifiers can be applied to the inputs and outputs of a compononent by r
 While most functions might be clear, some are more obscure.
 
 ### Degrees
-The Degrees input modifier indicates that the numbers received are actually measured in \[Degrees\] ![](/img/icons/gh/math/Degrees-png) rather than Radians. Think of it more like a preference setting for each angle input on a Grasshopper Component that state you prefer to work in Degrees. There is no output option as this is only available on Angle inputs.
+The Degrees input modifier indicates that the numbers received are actually measured in \[Degrees\] ![](/img/icons/gh/math/Degrees.png) rather than Radians. Think of it more like a preference setting for each angle input on a Grasshopper Component that state you prefer to work in Degrees. There is no output option as this is only available on Angle inputs.
 
 ### Expression
 The Expression I/O modifier allows you to change the input value by evaluating an expression such as `-x/2` which will have the input divided by 2 and make it negative. If you hover over the tag a tooltip will be displayed with the expression. On some components it can also be used as output modifier, but it is uncommon to actually do that. (_Note that you always use `x` instead of the input parameter name._)  
