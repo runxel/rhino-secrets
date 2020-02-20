@@ -52,5 +52,5 @@ The Reverse I/O modifier will reverse the order of a list (or lists in a multipl
 
 ### Simplify ![](/img/icons/gh/io/Simplify.png)
 The Simplify I/O modifier will remove the overlap shared amongst all branches, like \[Simplify Tree\] ![](/img/icons/gh/sets/Simplify_Tree.png) (_Note that a single branch does not share any overlap with anything else._)  
-Simplifiy does not seem to work? You might encounter a "bug" here, which can't be changed for the life of Grasshopper 1: Some components will _graft_ their ouput and even throwing the Simplify mod on it will in a tree of `{0;0}` – not what we expected! Instead use the \[Suirify\] ![](/img/icons/gh/io/Simplify.png) component residing under `Params > Util`.  
+Simplifiy does not seem to work? You might encounter a "bug" here, which can't be changed for the life of Grasshopper 1: Some components will _graft_ their ouput and even throwing the Simplify modifier on it will result in a tree of `{0;0}` – not what we expected! Instead use the \[Suirify\] ![](/img/icons/gh/io/Simplify.png) component residing under `Params > Util`.  
 <sub>See also [this post](https://discourse.mcneel.com/t/simplify-option-needs-to-get-universal/70311).</sub>
