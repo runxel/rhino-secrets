@@ -143,6 +143,8 @@ h3 {
     border-top: 1.2px solid $brand-color;
     border-left: 1.2px solid $brand-color;
     padding-bottom: 10px;
+    background: linear-gradient(175deg, rgba(255, 255, 255, 0.75) 0%,rgba(255, 255, 255, 0) 60%);
+    box-shadow: -3px -3px 6px -3px rgba(116, 116, 116, 0.4);
   }
 }
 
@@ -193,7 +195,7 @@ code {
   font-family: $base-font-family-mono;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: rgb(216, 240, 227);
+  background-color: #f5fbee;
   font-size: 90%;
   box-shadow:
     1px 1px 0 #959da55c,
