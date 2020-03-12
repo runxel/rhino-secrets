@@ -9,15 +9,15 @@ source: https://www.grasshopper3d.com/forum/topics/what-are-the-icons-on-a-compo
 
 | icon | name |
 | ---  | --- |
-| ![](/img/icons/gh/io/Degrees.png)        | [Degrees](#degrees) |
-| ![](/img/icons/gh/io/Expression.png)     | [Expression](#expression) |
-| ![](/img/icons/gh/io/Flatten.png)        | [Flatten](#flatten) |
-| ![](/img/icons/gh/io/Graft.png)          | [Graft](#graft) |
-| ![](/img/icons/gh/io/Invert.png)         | [Invert](#invert) |
-| ![](/img/icons/gh/io/Principal.png)      | [Principal](#principal) |
-| ![](/img/icons/gh/io/Reparameterize.png) | [Reparameterize](#reparameterize) |
-| ![](/img/icons/gh/io/Reverse.png)        | [Reverse](#reverse) |
-| ![](/img/icons/gh/io/Simplify.png)       | [Simplify](#simplify) |
+| ![](/img/icons/gh/io/Degrees.png)        | [Degrees](#degrees-) |
+| ![](/img/icons/gh/io/Expression.png)     | [Expression](#expression-) |
+| ![](/img/icons/gh/io/Flatten.png)        | [Flatten](#flatten-) |
+| ![](/img/icons/gh/io/Graft.png)          | [Graft](#graft-) |
+| ![](/img/icons/gh/io/Invert.png)         | [Invert](#invert-) |
+| ![](/img/icons/gh/io/Principal.png)      | [Principal](#principal-) |
+| ![](/img/icons/gh/io/Reparameterize.png) | [Reparameterize](#reparameterize-) |
+| ![](/img/icons/gh/io/Reverse.png)        | [Reverse](#reverse-) |
+| ![](/img/icons/gh/io/Simplify.png)       | [Simplify](#simplify-) |
 
 
 The I/O modifiers can be applied to the inputs and outputs of a compononent by right clicking on it. By the exception of "Principal" and "Reparameterize" all items in the context menu have a dedicated Grasshopper component, which work in the same manner. Hovering over a modifier will give you a tooltip explaining its function.
