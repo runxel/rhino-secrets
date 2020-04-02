@@ -193,6 +193,8 @@ With `_ShowZBuffer` you can view a z-buffer output in your viewport. Use the com
 ### Render mesh
 Sometimes it might be necessary to see the render mesh of an object. You could achieve this by typing in `_ShowRenderMesh`, but a better way is the command `_ToggleRenderMesh`. This way you can use the same command for showing and hiding the render mesh. Both commands are not available by menu or toolbar, so it might be helpful to create it.
 
+To get a 'physical' access use `_ExtractRenderMesh`, which gives you, well, the polygonal render mesh. This also works on any applied render mesh properties, like [_Thickness_](https://docs.mcneel.com/rhino/6/help/en-us/properties/thickness.htm).
+
 
 ### View it like it's 1999
 Because you want it. `_GradientView`
