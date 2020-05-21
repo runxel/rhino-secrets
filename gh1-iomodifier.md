@@ -29,7 +29,7 @@ While most functions might be clear, some are more obscure.
 The Degrees input modifier indicates that the numbers received are actually measured in \[Degrees\] ![](/img/icons/gh/math/Degrees.png) rather than Radians. Think of it more like a preference setting for each angle input on a Grasshopper Component that state you prefer to work in Degrees. There is no output option as this is only available on Angle inputs.
 
 ### Expression ![](/img/icons/gh/io/Expression.png)
-The Expression I/O modifier allows you to change the input value by evaluating an expression such as `-x/2` which will have the input divided by 2 and make it negative. If you hover over the tag a tooltip will be displayed with the expression. On some components it can also be used as output modifier, but it is uncommon to actually do that. (_Note that you always use `x` instead of the input parameter name._)  
+The Expression I/O modifier allows you to change the input value by evaluating an expression such as `-x/2` which will have the input divided by 2 and made negative. If you hover over the tag a tooltip will be displayed with the expression. On some components it can also be used as output modifier, but it is uncommon to actually do that. (_Note that you always use `x` instead of the input parameter name._)  
 Works like the \[Expression\] ![](/img/icons/gh/math/Expression.png) component.
 
 ### Flatten ![](/img/icons/gh/io/Flatten.png)
@@ -45,7 +45,7 @@ The Invert input modifier works in a similar way to a \[Not Gate\] ![](/img/icon
 The Principal input modifier is possibly the most obscure in this set. An input set to Principal is designated the major input of a component for the purposes of path assignment. This is important if you need to preserve the tree structure.
 
 ### Reparameterize ![](/img/icons/gh/io/Reparameterize.png)
-The Reparameterize input modifier will only work on lines, curves and surfaces forcing the domains of all geometry to the `[0.0 to 1.0]` range.
+The Reparameterize input modifier will only work on lines, curves and surfaces forcing the domains of all geometry to the `[0.0 to 1.0]` range, which is very helpful if you want to work in generalized manner; e.g. `0.5` should always yield the midpoint of a curve.
 
 ### Reverse ![](/img/icons/gh/io/Reverse.png)
 The Reverse I/O modifier will reverse the order of a list (or lists in a multiple path structure), similiar to the \[Reverse List\] ![](/img/icons/gh/sets/ListReverse.png).

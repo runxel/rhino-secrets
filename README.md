@@ -129,7 +129,7 @@ Give `_SolidPtOn` a try.
 ### Surfaces want to be one
 `_MergeAllFaces` command to turn _coplanar polysurface faces_ into one face.  
 
-`_MergeSrf` command to join surfaces together without making a polysurface (makes a new single surface, even if surfaces are not co-planar).
+`_MergeSrf` command to join surfaces together without making a polysurface (makes a new single surface, even if surfaces are not co-planar; works only with untrimmed surfaces).
 
 
 ### Rebuild your edges
