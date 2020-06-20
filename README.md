@@ -129,7 +129,7 @@ Give `_SolidPtOn` a try.
 ### Surfaces want to be one
 `_MergeAllFaces` command to turn _coplanar polysurface faces_ into one face.  
 
-`_MergeSrf` command to join surfaces together without making a polysurface (makes a new single surface, even if surfaces are not co-planar; works only with untrimmed surfaces).
+`_MergeSrf` command to join surfaces together without making a polysurface (makes a new single surface, even if surfaces are not co-planar; works only with untrimmed surfacesk).
 
 
 ### Rebuild your edges
@@ -140,6 +140,10 @@ You can use this macro with polysurfaces:
 _RebuildEdges _Enter
 _Join
 ```
+
+### Joining fails
+You might run into cases where you just can't seem to be able to join your surfaces into a solid. In those circumstances you should try to use `! _RemoveAllNakedMicroEdges`. You have to type that in – it is in no toolbar or menu.  
+[For Rhino 5 the similar command is `_testRemoveAllNakedMicroLoops`.]
 
 
 ### To Infinity...
