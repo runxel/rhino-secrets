@@ -238,6 +238,10 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 ### Running Python scripts from aliases or toolbar buttons
 [Read on the McNeel forum](https://discourse.mcneel.com/t/running-python-scripts-from-aliases-or-toolbar-buttons/)
 
+
+### Modeling challenge
+Are you after a challenge to model something? Have a look at the [_Model Mania_](https://blogs.solidworks.com/tech/2020/03/20-years-of-model-mania.html) of Solidworks.
+
 <hr>
 
 
