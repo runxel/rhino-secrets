@@ -13,6 +13,9 @@ A collection of cool stuff and lesser known facts on Rhino & Grasshopper you mig
 Go and see this wonderful explanation: [«Nurbs is just an acronym»](https://wordsandbuttons.online/nurbs_is_just_an_acronym.html)  
 ![nurbs explaination picture](/img/explain_nurbs.png)
 
+### Learn modeling in Rhino
+There is a great [video series on Vimeo](https://vimeo.com/showcase/4953232) where it's shown how to model things from scratch with an in-depth approach lasting around 90 minutes each.
+
 
 ### Symbols in command line
 Ever wondered what the specials chars in commands meant? Or are you always forgetting?  
