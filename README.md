@@ -245,6 +245,11 @@ Easteregg: `Elmo` is still a valid alias for `_Rebuild`.
 ### Modeling challenge
 Are you after a challenge to model something? Have a look at the [_Model Mania_](https://blogs.solidworks.com/tech/2020/03/20-years-of-model-mania.html) of Solidworks.
 
+
+### Programming
+If you're into programming you can't get around the API of Rhino, called RhinoCommon.  
+Of course you can use the [official docs](https://developer.rhino3d.com/api/), or you can use the great [APIdocs.co](https://apidocs.co/) site, which not only has the Rhino API, but Grasshopper and other .NET APIs (like Revit's) as well.
+
 <hr>
 
 
