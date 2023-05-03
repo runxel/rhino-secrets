@@ -448,6 +448,11 @@ _(Note: at least for me the behaviour is bugged and you need to do this twice, b
 ![red wiring picture](/img/gh1/red_wiring.png)
 
 
+### Z-Coordinates are important
+In a basic Grashopper you might not encounter the need, but if you interact with the "outside world", your filesystem or the web that is, you'll need to be extra sure one step is done after the other. Think of writing and reading files.  
+In a vanilla GH file this is obviously determined by the graph itself. An output is the dependancy of an input. However this might not a viable way – e.g. one component might have no output at all. The order in which components are calculated is determined by it's stacking order: Those in the Back are calculated before those in the front. Use `Edit > Arrange > Send to Back` to ensure things are done in the right order.
+
+
 ### Code in your editor of choice – Run in Grasshopper
 Right click into the GhPython component and choose "Show 'code' input parameter". Now using a "File path" primitive and the "Read File" component we can feed the python component with some external source code.  
 ![code feed into python picture](/img/gh1/code_feed_python.png)
